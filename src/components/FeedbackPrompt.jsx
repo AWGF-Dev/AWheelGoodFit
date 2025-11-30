@@ -122,7 +122,7 @@ const handleSubmit = () => {
             <div className="flex flex-col gap-4">
               {questions.map((q, qIdx) => (
                 <div key={qIdx} className="grid grid-cols-6 items-center gap-2">
-                  <div className="text-left text-sm pr-2">{q}</div>
+                  <div className="text-left text-sm pr-2 text-black">{q}</div>
                   {[0, 1, 2, 3, 4].map((n) => (
                     <div
                       key={n}

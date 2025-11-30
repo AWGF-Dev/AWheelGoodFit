@@ -320,8 +320,6 @@ function App() {
                 {activePage === "page3" && <PageThree title="The Person" activeSubtab={activeSubtab} onSubtabClick={handleSubtabClick}  />}
                 {activePage === "page4" && <PageFour title="The Wheelchair" activeSubtab={activeSubtab} onSubtabClick={handleSubtabClick}  />}
                 {activePage === "page5" && <PageFive title="Measurements" activeSubtab={activeSubtab} onSubtabClick={handleSubtabClick} />}
-                {activePage === "page6" && <PageSix title="Postural Considerations" activeSubtab={activeSubtab} onSubtabClick={handleSubtabClick} />}
-                {activePage === "page7" && <PageSeven title="Safety Check" activeSubtab={activeSubtab} onSubtabClick={handleSubtabClick} />}
               </div>
             </div>
 

@@ -3,8 +3,8 @@ import Volume from "./UI/Volume";
 import { getAssetUrl } from "../utils/getAssetUrl";
 
 export default function Banner({ activePage, handlePageSwitch, audioRef }) {
-  const pages = ["page1", "page2", "page3", "page4", "page5", "page6", "page7"];
-  const labels = ["Home", "Overview", "The Person", "The Wheelchair", "Seating and Positioning", "Postural Considerations","Safety Check"];
+  const pages = ["page1", "page2", "page3", "page4", "page5"];
+  const labels = ["Home", "Overview", "The Person", "The Wheelchair", "Seating and Positioning"];
   const navRefs = useRef([]);
   const [activeLeft, setActiveLeft] = useState(0);
   const [activeWidth, setActiveWidth] = useState(0);
@@ -35,7 +35,7 @@ export default function Banner({ activePage, handlePageSwitch, audioRef }) {
         <nav className="relative flex space-x-4">
         {/* Active box */}
         <div
-            className="absolute top-0 h-full border-2 bg-black/5  transition-all duration-300 ease-out"
+            className="absolute top-0 h-full border-2 border-black bg-black/5  transition-all duration-300 ease-out"
             style={{
             width: activeWidth,
             transform: `translateX(${activeLeft}px)`,

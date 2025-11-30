@@ -1,0 +1,87 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 31.01.2021 13:36:45
+
+newmtl rubber_Mat
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 1.000000 1.000000 1.000000
+	Kd 1.000000 1.000000 1.000000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka rubber_Mat_Diffuse.png
+	map_Kd rubber_Mat_Diffuse.png
+	map_Ks rubber_Mat_Specular.png
+	map_bump rubber_Mat_Normal.png
+	bump rubber_Mat_Normal.png
+
+newmtl plastic_Mat
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 1.000000 1.000000 1.000000
+	Kd 1.000000 1.000000 1.000000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka plastic_Mat_Diffuse.png
+	map_Kd plastic_Mat_Diffuse.png
+	map_Ks plastic_Mat_Specular.png
+	map_bump plastic_Mat_Normal.png
+	bump plastic_Mat_Normal.png
+
+newmtl armrest_Mat
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 1.000000 1.000000 1.000000
+	Kd 1.000000 1.000000 1.000000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka armrest_Mat_Diffuse.png
+	map_Kd armrest_Mat_Diffuse.png
+	map_Ks armrest_Mat_Specular.png
+	map_bump armrest_Mat_Normal.png
+	bump armrest_Mat_Normal.png
+
+newmtl metal_Mat
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 1.000000 1.000000 1.000000
+	Kd 1.000000 1.000000 1.000000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka metal_Mat_Diffuse.png
+	map_Kd metal_Mat_Diffuse.png
+	map_Ks metal_Mat_Specular.png
+	map_bump metal_Mat_Normal.png
+	bump metal_Mat_Normal.png
+
+newmtl textile_Mat
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 1.000000 1.000000 1.000000
+	Kd 1.000000 1.000000 1.000000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka textile_Mat_Diffuse.png
+	map_Kd textile_Mat_Diffuse.png
+	map_Ks textile_Mat_Specular.png
+	map_bump textile_Mat_Normal.png
+	bump textile_Mat_Normal.png

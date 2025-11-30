@@ -103,7 +103,7 @@ const handleSubmit = () => {
               ×
             </button>
 
-            <h2 className="text-2xl font-bold mb-4">Feedback Form</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">Feedback Form</h2>
             <p className="text-gray-700 mb-6">
               Please provide your feedback using the scale below
             </p>
@@ -112,7 +112,7 @@ const handleSubmit = () => {
             <div className="grid grid-cols-6 text-center font-semibold mb-4">
               <div></div> {/* empty corner */}
               {scaleLabels.map((label, i) => (
-                <div key={i} className="text-xs px-1">
+                <div key={i} className="text-xs px-1 text-black">
                   {label}
                 </div>
               ))}

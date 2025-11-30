@@ -129,14 +129,14 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
     <div className="w-full h-full flex">
       {/* LEFT SIDEBAR */}
       <div className="w-72 bg-gray-100 border-r border-gray-300 p-6 flex-shrink-0 h-screen flex flex-col transition-opacity duration-300">
-        <p className="text-4xl font-mono font-bold mb-6">{title}</p>
+        <p className="text-4xl font-mono font-bold mb-6 text-gray-800">{title}</p>
         <div className="flex flex-col gap-3">
           {subtabs.map(tab => (
             <div
               key={tab.id}
               onClick={() => onSubtabClick(tab.id, "page4")}
               className={`cursor-pointer px-3 py-2 rounded font-Pixelmono text-xl
-                ${activeSubtab === tab.id ? "bg-black text-white" : "hover:bg-gray-300"}`}
+                ${activeSubtab === tab.id ? "bg-black text-white" : "hover:bg-gray-300 text-black"}`}
             >
               {tab.label}
             </div>
@@ -145,8 +145,8 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
       </div>
 
       {/* RIGHT CONTENT */}
-      <div className="flex-1 p-8 overflow-y-auto relative transition-opacity duration-300">
-        <h2 className="text-6xl font-bold mb-6 font-Cap">
+      <div className="flex-1 p-8 overflow-y-auto relative transition-opacity duration-300 bg-white">
+        <h2 className="text-6xl font-bold mb-6 font-Cap text-gray-700">
           {currentSubtab?.label}
         </h2>
 

@@ -118,7 +118,7 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
 
       {/* RIGHT CONTENT */}
       <div className="flex-1 p-8 bg-white overflow-y-auto relative transition-opacity duration-300">
-        <h2 className="text-6xl font-bold mb-6 font-Cap text-gray-800">
+        <h2 className="text-6xl font-bold mb-6 font-Cap text-gray-700">
           {currentSubtab?.label}
         </h2>
 

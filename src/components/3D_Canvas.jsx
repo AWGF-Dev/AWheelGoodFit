@@ -14,7 +14,7 @@ import LoadingScreen from './LoadingScreen';
 import { DebugCamera } from './DebugCamera';
 import { getAssetUrl } from '../utils/getAssetUrl';
 
-console.log('GLB URL:', getAssetUrl('goopcompressed.glb'));
+console.log('GLB URL:', getAssetUrl('goopcompressed2kfinal.glb'));
 
 
 // function Viewer () {
@@ -85,7 +85,7 @@ export default function ModelCanvas({ cameraTarget, onHotspotClick, hotspots, ac
 
   useEffect(() => {
     // Clear GLTF cache so loader shows again
-    useGLTF.clear(getAssetUrl('goopcompressed.glb'));
+    useGLTF.clear(getAssetUrl('goopcompressed2kfinal.glb'));
   }, []);
 
   useEffect(() => {
@@ -137,7 +137,7 @@ export default function ModelCanvas({ cameraTarget, onHotspotClick, hotspots, ac
         
             <ModelRender
               key={activePage} 
-              path={getAssetUrl("goopcompressed.glb")}
+              path={getAssetUrl("goopcompressed2kfinal.glb")}
               scale={0.04}
             />
           

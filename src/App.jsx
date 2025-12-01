@@ -345,7 +345,7 @@ function App() {
 
             <div className="mt-5 flex flex-col items-center justify-between h-25 w-60 bg-white border-black border-5 font-mono p-3 text-black text-xs">
               <div className="text-left font-bold">
-                <div>A Wheel Good Fit: Stinky 2025</div>
+                <div>A Wheel Good Fit: AWGF 2025</div>
                 <div className="inline-block">
                   Press start to begin<span className="blinking-cursor">_</span>
                 </div>

@@ -20,7 +20,7 @@ const CameraControls = forwardRef(({ disableControls = false, ...props }, ref) =
       screenSpacePanning
       enableDamping
       dampingFactor={0.025}
-      zoomSpeed={0.4}
+      zoomSpeed={0.8}
       enableDollyZoom={false}
       panSpeed={0.6}
       rotateSpeed={0.5}

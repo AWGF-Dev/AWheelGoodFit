@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Heart69 from "./UI/Heart69";
 
 const FeedbackPrompt = () => {
   const [visible, setVisible] = useState(false); // DOM mount
@@ -11,9 +12,9 @@ const FeedbackPrompt = () => {
 
   const questions = [
     "This resource has improved my knowledge of wheelchair fitting",
-    "The 3D model is clear and understandable",
-    "I found the hotspots informative",
-    "The layout is visually appealing",
+    "The 3D model is easy to navigate",
+    "The information is easy to understand",
+    "The website layout is visually appealing",
     "Overall, I am satisfied with the experience",
   ];
 
@@ -102,8 +103,8 @@ const handleSubmit = () => {
             >
               ×
             </button>
-
-            <h2 className="text-2xl font-bold text-black mb-4">Feedback Form</h2>
+            
+            <h2 className="text-2xl font-bold text-black mb-4">Feedback Survey</h2>
             <p className="text-gray-700 mb-6">
               Please provide your feedback using the scale below
             </p>
@@ -139,6 +140,9 @@ const handleSubmit = () => {
                 </div>
               ))}
             </div>
+            <div className="mt-10 mx-auto">
+              <Heart69 />
+            </div>
 
             {/* Submit button */}
             <div
@@ -158,11 +162,11 @@ const handleSubmit = () => {
       className="bg-green-400/80 border-2 border-white text-white font-Pixelmono px-6 py-3 rounded-xs shadow-lg font-bold text-xl transition-all duration-700 ease-in-out"
       style={{
         opacity: showThanks ? 1 : 0,
-        transform: showThanks ? "translateY(-350px)" : "translateY(-370px)",
+        transform: showThanks ? "translateY(-300px)" : "translateY(-320px)",
         transitionProperty: "opacity, transform",
       }}
     >
-      Thanks for your feedback! ;D
+      Thanks for your feedback! 
     </div>
   </div>
 )}

@@ -121,7 +121,7 @@ export default function ModelCanvas({ cameraTarget, onHotspotClick, hotspots, ac
         onContextMenu={(e) => e.preventDefault()}
         shadows
         camera={{ position: [5, 3, 5], fov: 50 }}
-        style={{ width: '100%', height: '100%', background: '#ffffffff' }}
+        style={{ width: '100%', height: '100%', background: '#f1efefff' }}
       >
 
         <DebugCamera />

@@ -5,7 +5,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
   const subtabs = [
     {
       id: "intro",
-      label: "Linear Specifications",
+      label: "Common Types of Wheelchairs",
       content: (
         <>
           <p className="text-gray-700 text-xl font-Pixelmono">
@@ -35,7 +35,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "fit",
-      label: "Angular Specifications",
+      label: "Wheelchair Frame",
       content: (
         <>
           <p className="text-gray-700 text-xl font-Pixelmono">
@@ -50,7 +50,79 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "measure",
-      label: "Configurations",
+      label: "Rear Wheels",
+      content: (
+        <>
+          <p className="text-gray-700 text-xl font-Pixelmono">
+            Additional studies and references can be found in medical journals and historical archives.
+          </p>
+          <div className="h-64 bg-gray-200 rounded"></div>
+        </>
+      )
+    },
+    {
+      id: "5",
+      label: "Castors",
+      content: (
+        <>
+          <p className="text-gray-700 text-xl font-Pixelmono">
+            Additional studies and references can be found in medical journals and historical archives.
+          </p>
+          <div className="h-64 bg-gray-200 rounded"></div>
+        </>
+      )
+    },
+    {
+      id: "6",
+      label: "Armrests",
+      content: (
+        <>
+          <p className="text-gray-700 text-xl font-Pixelmono">
+            Additional studies and references can be found in medical journals and historical archives.
+          </p>
+          <div className="h-64 bg-gray-200 rounded"></div>
+        </>
+      )
+    },
+    {
+      id: "7",
+      label: "Legrests",
+      content: (
+        <>
+          <p className="text-gray-700 text-xl font-Pixelmono">
+            Additional studies and references can be found in medical journals and historical archives.
+          </p>
+          <div className="h-64 bg-gray-200 rounded"></div>
+        </>
+      )
+    },
+    {
+      id: "8",
+      label: "Configuration",
+      content: (
+        <>
+          <p className="text-gray-700 text-xl font-Pixelmono">
+            Additional studies and references can be found in medical journals and historical archives.
+          </p>
+          <div className="h-64 bg-gray-200 rounded"></div>
+        </>
+      )
+    },
+    {
+      id: "9",
+      label: "Fitting Checklist: The Chair",
+      content: (
+        <>
+          <p className="text-gray-700 text-xl font-Pixelmono">
+            Additional studies and references can be found in medical journals and historical archives.
+          </p>
+          <div className="h-64 bg-gray-200 rounded"></div>
+        </>
+      )
+    },
+    {
+      id: "10",
+      label: "References",
       content: (
         <>
           <p className="text-gray-700 text-xl font-Pixelmono">

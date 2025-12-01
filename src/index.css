@@ -22,6 +22,8 @@
   .pixel-italic {
     display: inline-block;
     transform: skewX(-15deg); 
+    transform-origin: bottom left;
+    vertical-align: baseline;
   }
 }
 

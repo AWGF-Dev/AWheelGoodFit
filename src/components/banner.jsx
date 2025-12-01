@@ -4,7 +4,7 @@ import { getAssetUrl } from "../utils/getAssetUrl";
 
 export default function Banner({ activePage, handlePageSwitch, audioRef }) {
   const pages = ["page1", "page2", "page3", "page4", "page5"];
-  const labels = ["Home", "Overview", "The Person", "The Wheelchair", "Seating and Positioning"];
+  const labels = ["Home", "Overview", "The Person", "Seating and Positioning", "The Wheelchair"];
   const navRefs = useRef([]);
   const [activeLeft, setActiveLeft] = useState(0);
   const [activeWidth, setActiveWidth] = useState(0);
@@ -22,11 +22,7 @@ export default function Banner({ activePage, handlePageSwitch, audioRef }) {
     <header className="w-screen h-20 tracking-widest bg-white shadow flex items-center px-10 justify-between border-b-3 border-gray-300 relative">
     {/* Logo */}
       <div className="z-10">
-        <img
-          src={getAssetUrl('awgf logo.png')}
-          alt="AWGF Logo"
-          className="h-20 mb-3 w-auto object-contain"
-        />
+        <div className="text-4xl text-blue-800 pixel-bold tracking-ti font-Pixelmono">AWheelGoodFit</div>
       </div>
 
     {/* Right side wrapper */}

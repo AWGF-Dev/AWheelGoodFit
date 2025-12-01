@@ -25,11 +25,11 @@ export default function Sidebar({ isOpen, activeHotspot, onSubtabClick, onCloseS
 
       {/* Hotspot Overview */}
       {activeHotspot ? (
-        <p className="text-black text-xl tracking-wider font-bold font-Rob px-4 mb-4">
+        <div className="text-black text-[22px] tracking-tight font-Rob px-8 mb-4">
           {activeHotspot?.overview || "No overview available"}
-        </p>
+        </div>
       ) : (
-        <p className="text-black font-Rob tracking-wider text-xl font-bold px-4 mb-4">No hotspot is currently selected.</p>
+           <p className="text-black font-Rob tracking-wider text-xl px-8 mb-4">No hotspot is currently selected.</p>
       )}
 
       {/* Optional buttons */}
@@ -39,7 +39,7 @@ export default function Sidebar({ isOpen, activeHotspot, onSubtabClick, onCloseS
             <div
               key={link.id}
               onClick={() => onSubtabClick(link.id, link.page, true)}
-              className="px-4 py-2 text-xl w-60 font-Pixelmono text-center text-white bg-blue-400 rounded hover:bg-blue-300 transition-colors cursor-pointer"
+              className="px-4 py-2 text-xl w-65 font-Pixelmono text-center text-white bg-blue-400 rounded hover:bg-blue-300 transition-colors cursor-pointer"
             >
               {link.label} &gt;
             </div>

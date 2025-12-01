@@ -6,7 +6,7 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
   const subtabs = [
     {
       id: "intro",
-      label: "Common Types of Wheelchairs",
+      label: "Body Measurements",
       content: (
         <>
           <p className="text-gray-700 text-xl tracking-wide font-Rob">
@@ -36,7 +36,7 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "fit",
-      label: "The Frame",
+      label: "Linear Measurements",
       content: (
         <>
           <p className="text-gray-700 text-xl font-Pixelmono">
@@ -51,7 +51,7 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "measure",
-      label: "Rear Wheels",
+      label: "Angular Measurements",
       content: (
         <>
           <p className="text-gray-700 text-xl font-Pixelmono">
@@ -63,7 +63,7 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "4",
-      label: "Castors",
+      label: "Types of Sitters",
       content: (
         <>
           <p className="text-gray-700 text-xl font-Pixelmono">
@@ -75,7 +75,7 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "5",
-      label: "Arm Support",
+      label: "Postural Support Devices",
       content: (
         <>
           <p className="text-gray-700 text-xl font-Pixelmono">
@@ -87,7 +87,7 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "6",
-      label: "Leg Support",
+      label: "Fitting Checklist: Posture",
       content: (
         <>
           <p className="text-gray-700 text-xl font-Pixelmono">
@@ -99,7 +99,7 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "7",
-      label: "Checklist Test",
+      label: "References",
       content: (
         <>
           <PageFourChecklist />

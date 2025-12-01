@@ -162,7 +162,7 @@ const handleSubmit = () => {
       className="bg-green-400/80 border-2 border-white text-white font-Pixelmono px-6 py-3 rounded-xs shadow-lg font-bold text-xl transition-all duration-700 ease-in-out"
       style={{
         opacity: showThanks ? 1 : 0,
-        transform: showThanks ? "translateY(-300px)" : "translateY(-320px)",
+        transform: showThanks ? "translateY(-250px)" : "translateY(-270px)",
         transitionProperty: "opacity, transform",
       }}
     >

@@ -1,5 +1,6 @@
 import React from "react";
 import { getAssetUrl } from "../utils/getAssetUrl";
+import { useEffect, useRef } from "react";
 
 const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
   const subtabs = [
@@ -21,7 +22,7 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
                 This includes how easily someone can move, transfer, and complete tasks.
               </p>
 
-              <ul className="list-disc ml-8 mt-2 space-y-2">
+              <ul className="list-disc ml-12 mt-2 space-y-2">
                 <li>
                   <b>Examples:</b> Overall weight, frame design, seat height and angle, wheel position and size, and the design of footrests and armrests.
                 </li>
@@ -42,7 +43,7 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
                 This refers to optimising a client’s sitting position, which is crucial for comfort, function and preventing pain.
               </p>
 
-              <ul className="list-disc ml-8 mt-2 space-y-2">
+              <ul className="list-disc ml-12 mt-2 space-y-2">
                 <li>
                   <b>Examples:</b> Adjustability of the seat depth, backrest angle and height, and armrest/footrest height. Extra postural support devices can be added.
                 </li>
@@ -64,7 +65,7 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
                 Evaluating the real-world environments where the wheelchair will be used to ensure it supports the user's participation in desired activities.
               </p>
 
-              <ul className="list-disc ml-8 mt-2 space-y-2">
+              <ul className="list-disc ml-12 mt-2 space-y-2">
                 <li>
                   <b>Examples:</b> Frame design and durability, wheelbase length, and the size/position of the wheels (especially for uneven surfaces).
                 </li>
@@ -77,9 +78,6 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
               </ul>
             </li>
           </ol>
-
-
-
         </>
       )
     },
@@ -100,7 +98,7 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
           <span className="text-gray-700 text-xl font-Rob font-bold mt-10">
             Understanding Medical & Physical History
           </span>
-          <ul className="list-disc ml-8 space-y-2 text-gray-700 text-xl font-Rob mt-5">
+          <ul className="list-disc ml-12 space-y-2 text-gray-700 text-xl font-Rob mt-5">
             <li>
               <b>Condition & Comorbidities:</b> How does the person's diagnosis and other health issues affect their function and posture?
             </li>
@@ -141,7 +139,7 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
           <span className="text-gray-700 text-xl font-Rob font-bold mt-10">
             Understanding Medical & Physical History
           </span>
-          <ul className="list-disc ml-8 space-y-2 text-gray-700 text-xl font-Rob mt-5">
+          <ul className="list-disc ml-12 space-y-2 text-gray-700 text-xl font-Rob mt-5">
             <li>
               <b>Environmental Access:</b> Consider the home, vehicle, and community environments the wheelchair must navigate.
             </li>
@@ -172,7 +170,7 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
           <p className="text-gray-700 text-xl font-Rob">
             Modifiable, extrinsic risk factors related to repetitive strain injury in users include:
           </p>
-          <ul className="list-disc ml-8 space-y-2 text-gray-700 text-xl font-Rob">
+          <ul className="list-disc ml-12 space-y-2 text-gray-700 text-xl font-Rob">
             <li>Propulsion biomechanics and frequency</li>
             <li>Transfer technique and quantity</li>
             <li>Wheelchair configuration and postural support</li>
@@ -233,25 +231,34 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
     }
   ];
 
-  const handleNext = () => {
-    const currentIndex = subtabs.findIndex(tab => tab.id === activeSubtab);
-    if (currentIndex < subtabs.length - 1) {
-      onSubtabClick(subtabs[currentIndex + 1].id, "page3");
-    }
-  };
+  const currentIndex = subtabs.findIndex(tab => tab.id === activeSubtab);
+  const currentSubtab = subtabs[currentIndex];
+  const scrollRef = useRef(null);
 
   const handlePrev = () => {
-    const currentIndex = subtabs.findIndex(tab => tab.id === activeSubtab);
     if (currentIndex > 0) {
       onSubtabClick(subtabs[currentIndex - 1].id, "page3");
     }
   };
 
+  const handleNext = () => {
+    if (currentIndex < subtabs.length - 1) {
+     onSubtabClick(subtabs[currentIndex + 1].id, "page3");
+    }
+  };
+
+      // Reset scroll when activeSubtab changes
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }, [activeSubtab]);
+
   return (
     <div className="w-full h-full flex">
       {/* LEFT SIDEBAR */}
       <div className="w-72 bg-gray-100 border-r border-gray-300 p-6 flex-shrink-0 h-screen flex flex-col">
-        <p className="text-4xl font-mono font-bold text-gray-800 mb-6">{title}</p>
+        <p className="text-4xl font-mono font-bold text-gray-800 tracking-tight mb-6">{title}</p>
         <div className="flex flex-col gap-3">
           {subtabs.map(tab => (
             <div
@@ -267,7 +274,7 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
       </div>
 
       {/* RIGHT CONTENT */}
-      <div className="flex-1 p-8 overflow-y-auto relative bg-white">
+      <div ref={scrollRef} className="flex-1 p-8 overflow-y-auto relative bg-white">
         <h2 className="text-6xl font-bold text-gray-700 mb-6 font-Cap">
           {subtabs.find(tab => tab.id === activeSubtab)?.label}
         </h2>

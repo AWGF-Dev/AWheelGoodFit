@@ -1,5 +1,6 @@
 import React from "react";
 import { getAssetUrl } from "../utils/getAssetUrl";
+import { useEffect, useRef } from "react";
 
 const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
   const subtabs = [
@@ -11,7 +12,7 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
           <div className="flex items-start gap-4 mb-6">
             <div className="flex-1">
               <p className="text-gray-700 text-xl font-Rob mb-4">
-                <ital>In April 2023,</ital> the World Health Organisation (WHO) introduced a new four-step process for wheelchair provision in its Wheelchair Provision Guidelines: Select, Fit, Use, and Follow-Up. As a client’s needs change or equipment requires replacement, their wheelchair configuration may also need to be reviewed or adjusted. This website provides an introductory foundation to the "Fit" domain, with a focus on manual wheelchairs.
+                In April 2023, the World Health Organisation (WHO) introduced a new four-step process for wheelchair provision in its Wheelchair Provision Guidelines: Select, Fit, Use, and Follow-Up. As a client’s needs change or equipment requires replacement, their wheelchair configuration may also need to be reviewed or adjusted. This website provides an introductory foundation to the "Fit" domain, with a focus on manual wheelchairs.
               </p>
               <p className="text-gray-700 text-xl font-Rob mb-4">
                 The WHO (2023) defines this step as:
@@ -98,7 +99,7 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
           <p className="text-gray-700 text-xl font-Rob mb-4">
             Inadequate manual wheelchair fitting is a high-stakes clinical competency gap within wheelchair provision, directly linked to adverse outcomes including pressure injuries, pain, and reduced functional independence (Sprigle, 2023). The associated economic burden is substantial, with pressure injuries alone costing the Australian healthcare system an estimated $9.11 billion annually (Nghiem et al., 2022). Conversely, a well-fitted wheelchair significantly enhances comfort, user participation, and quality of life (Gallagher et al., 2020). Despite its importance, the "fitting" domain is consistently identified as the weakest competency among emerging physiotherapists—attributable to a lack of standardised entry-level education in wheelchair knowledge and relevant fitting principles (Burrola-Mendez et al., 2022; Toro-Hernández et al., 2019; Goldberg et al., 2023). This highlights a critical disparity between foundational training and the competencies emphasised by international guidelines (WHO, 2023), necessitating supplemental, targeted educational interventions.
           </p>
-          <h2 className="text-blue-500 text-4xl font-Cap mt-8">
+          <h2 className="text-orange-500 text-4xl font-Cap mt-8">
             Our goal:
           </h2>
           <p className="text-gray-700 text-xl font-Rob mb-4">
@@ -192,26 +193,32 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
 
   const currentIndex = subtabs.findIndex(tab => tab.id === activeSubtab);
   const currentSubtab = subtabs[currentIndex];
+  const scrollRef = useRef(null);
 
   const handlePrev = () => {
     if (currentIndex > 0) {
       onSubtabClick(subtabs[currentIndex - 1].id, "page2");
-      window.scrollTo(0, 0);
     }
   };
 
   const handleNext = () => {
     if (currentIndex < subtabs.length - 1) {
      onSubtabClick(subtabs[currentIndex + 1].id, "page2");
-     window.scrollTo(0, 0);
     }
   };
+
+    // Reset scroll when activeSubtab changes
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }, [activeSubtab]);
 
   return (
     <div className="w-full h-full flex">
       {/* LEFT SIDEBAR */}
       <div className="w-72 bg-gray-100 border-r border-gray-300 p-6 flex-shrink-0 h-screen flex flex-col transition-opacity duration-300">
-        <p className="text-4xl font-mono text-black font-bold mb-6">{title}</p>
+        <p className="text-4xl font-mono text-black font-bold tracking-tight mb-6">{title}</p>
         <div className="flex flex-col gap-3">
           {subtabs.map(tab => (
             <div
@@ -227,7 +234,7 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
       </div>
 
       {/* RIGHT CONTENT */}
-      <div className="flex-1 p-8 bg-white overflow-y-auto relative transition-opacity duration-300">
+      <div ref={scrollRef} className="flex-1 p-8 bg-white overflow-y-auto relative transition-opacity duration-300">
         <h2 className="text-6xl font-bold mb-6 font-Cap text-gray-700">
           {currentSubtab?.label}
         </h2>

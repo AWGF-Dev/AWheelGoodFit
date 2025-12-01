@@ -1,5 +1,7 @@
 import React from "react";
 import { getAssetUrl } from "../utils/getAssetUrl";
+import { useEffect, useRef } from "react";
+
 
 const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
   const subtabs = [
@@ -136,20 +138,32 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
 
   const currentIndex = subtabs.findIndex(tab => tab.id === activeSubtab);
   const currentSubtab = subtabs[currentIndex];
+  const scrollRef = useRef(null);
 
   const handlePrev = () => {
-    if (currentIndex > 0) onSubtabClick(subtabs[currentIndex - 1].id, "page5");
+    if (currentIndex > 0) {
+      onSubtabClick(subtabs[currentIndex - 1].id, "page5");
+    }
   };
 
   const handleNext = () => {
-    if (currentIndex < subtabs.length - 1) onSubtabClick(subtabs[currentIndex + 1].id, "page5");
+    if (currentIndex < subtabs.length - 1) {
+     onSubtabClick(subtabs[currentIndex + 1].id, "page5");
+    }
   };
+
+      // Reset scroll when activeSubtab changes
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }, [activeSubtab]);
 
   return (
     <div className="w-full h-full flex">
       {/* LEFT SIDEBAR */}
       <div className="w-72 bg-gray-100 border-r border-gray-300 p-6 flex-shrink-0 h-screen flex flex-col transition-opacity duration-300">
-        <p className="text-4xl font-mono font-bold mb-6 text-gray-800">{title}</p>
+        <p className="text-4xl font-mono font-bold mb-6 text-gray-800 tracking-tight">{title}</p>
         <div className="flex flex-col gap-3">
           {subtabs.map(tab => (
             <div
@@ -165,7 +179,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
       </div>
 
       {/* RIGHT CONTENT */}
-      <div className="flex-1 p-8 overflow-y-auto relative transition-opacity duration-300 bg-white">
+      <div ref={scrollRef} className="flex-1 p-8 overflow-y-auto relative transition-opacity duration-300 bg-white">
         <h2 className="text-6xl font-bold mb-6 font-Cap text-gray-700">
           {currentSubtab?.label}
         </h2>

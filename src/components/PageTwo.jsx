@@ -220,7 +220,7 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
   return (
     <div className="w-full h-full flex">
       {/* LEFT SIDEBAR */}
-      <div className="w-72 bg-gray-100 border-r border-gray-300 p-6 flex-shrink-0 h-screen flex flex-col transition-opacity duration-300">
+      <div className="w-72 bg-gray-100 overflow-y-auto pb-30 border-r border-gray-300 p-6 flex-shrink-0 h-screen flex flex-col transition-opacity duration-300">
         <p className="text-4xl font-mono text-black font-bold tracking-tight mb-6">{title}</p>
         <div className="flex flex-col gap-3">
           {subtabs.map(tab => (

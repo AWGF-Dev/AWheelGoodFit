@@ -39,7 +39,7 @@ export default function Sidebar({ isOpen, activeHotspot, onSubtabClick, onCloseS
             <div
               key={link.id}
               onClick={() => onSubtabClick(link.id, link.page, true)}
-              className="px-4 py-2 text-xl w-65 font-Pixelmono text-center text-white bg-blue-400 rounded hover:bg-blue-300 transition-colors cursor-pointer"
+              className="ml-4 px-4 py-2 text-xl w-fit font-Pixelmono text-center text-white bg-blue-400 rounded hover:bg-blue-300 transition-colors cursor-pointer"
             >
               {link.label} &gt;
             </div>

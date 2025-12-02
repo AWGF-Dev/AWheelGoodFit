@@ -51,7 +51,7 @@ function App() {
       distance: "7",
       overview: "The rear wheel, including its tire and rim, is the primary contact point with the ground. The choice of tire (e.g., pneumatic tires for shock absorption or solid tires for zero maintenance) and wheel camber (angle for stability vs. width) can significantly influence rolling resistance, propulsion efficiency, maneuverability, and overall user comfort.",
       links: [
-        { id: "measure", page: "page5", label: "More on Rear Wheels" }
+        { id: "measure", page: "page5", label: "More Info on Rear Wheels" }
       ]
     },
     {
@@ -62,7 +62,7 @@ function App() {
       distance: "7",
       overview: "Push handles are extensions to the top of the backrest frame that project backwards from the wheelchair and permit an aid to help propel the chair from behind.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+
       ]
     },
     {
@@ -73,7 +73,7 @@ function App() {
       distance: "7",
       overview: "The back support provides the surface against which the user rests their back and pelvis. Its height and contour are clinically selected based on the user's trunk control and postural needs. A lower back support accommodates active trunk movement and allows for upper extremity propulsion, while a higher, more contoured support is necessary for users requiring significant postural support.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+
       ]
     },
     {
@@ -89,7 +89,7 @@ function App() {
         </>
       ),
       links: [
-        { id: "5", page: "page4", label: "More on armrests" },
+        { id: "6", page: "page5", label: "More Info on Armrests" },
       ]
     },
     {
@@ -100,7 +100,7 @@ function App() {
       distance: "7",
       overview: "The push rim is the outer ring on the wheel that the user grips to propel the chair. Its design directly impacts propulsion biomechanics and upper limb health. Push rims can be coated for improved grip (reducing force per push) and contoured for users with limited hand function, both aimed at decreasing the risk of repetitive strain injuries. Standard handrims are a single round tube with about ¾ inch diameter.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+        { id: "measure", page: "page5", label: "Go to 'Rear Wheels' for More Info" },
       ]
     },
     {
@@ -111,7 +111,7 @@ function App() {
       distance: "7",
       overview: "Anti-tip wheels are small auxiliary wheels attached to the rear of the frame to prevent the wheelchair from tipping over backwards. They ensuring a smoother and more confident mobility experience for users.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+
       ]
     },
         {
@@ -122,7 +122,7 @@ function App() {
       distance: "7",
       overview: "Wheel locks are safety devices that prevent the wheelchair from rolling when stationary and help facilitate safe transfers. The type (e.g., standard scissor vs. easy-reach lever) and placement should ensure the user can engage and disengage them effectively without compromising their posture or safety.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+
       ]
     },
         {
@@ -133,7 +133,7 @@ function App() {
       distance: "7",
       overview: "The hub is the center component of the wheel to which the spokes connect. The hub also houses the axle.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+
       ]
     },
         {
@@ -144,7 +144,7 @@ function App() {
       distance: "5.5",
       overview: "This mechanism allows for the rapid removal of the rear wheels without tools. It allows for easy transportation—such as placing the chair in a car—and maintenance.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+
       ]
     },
         {
@@ -155,7 +155,7 @@ function App() {
       distance: "7",
       overview: "Seat cushions are placed inferior to the buttocks and thighs. Their primary functions include redistributing pressure to prevent pressure injuries, providing postural support and stability for the pelvis and spine, and enhance sitting comfort. Seat cushion are often categorised by their design intent—focusing on comfort, pressure relief, or postural control.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+
       ]
     },
         {
@@ -166,7 +166,7 @@ function App() {
       distance: "7",
       overview: "Foot rests support the feet to maintain proper lower limb alignment, which is critical for posture, circulation, and comfort. Features such as flip-up or swing-away designs clear space anterior to the chair, facilitating safe and independent transfers. Heel loops, often made of nylon, help maintain foot positioning, especially for users with limited lower extremity control or sensation.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+        { id: "7", page: "page5", label: "Go to 'Legrests' for More Info" },
       ]
     },
         {
@@ -182,7 +182,7 @@ function App() {
         </>
       ),
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+        { id: "fit", page: "page5", label: "More Info on Frames" },
       ]
     },
         {
@@ -193,7 +193,7 @@ function App() {
       distance: "7",
       overview: "The castor fork is the connecting component that attaches the front castor wheel to the wheelchair frame via the castor housing. Its design and durability are essential for maintaining proper front-end alignment, which directly affects steering responsiveness, tracking, and the overall stability of the wheelchair during turns and over uneven surfaces.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+        { id: "5", page: "page5", label: "More Info on Castors" },
       ]
     },
         {
@@ -204,7 +204,7 @@ function App() {
       distance: "7",
       overview: "The castor tire is the front wheel's point of contact with the ground and greatly influences maneuverability and ride comfort. The smaller the castor the greater the mobility, the larger the castor the greater the stability. The firmer the material the greater the maneuverability, the softer the material the more cushioned the ride.",
       links: [
-        { id: "intro", page: "page2", label: "Go to Overview" },
+        { id: "5", page: "page5", label: "More Info on Castors" },
       ]
     }
   ];
@@ -317,10 +317,10 @@ function App() {
 
             <Loading />
 
-            <div className="mt-5 flex flex-col items-center justify-between h-25 w-60 bg-white border-black border-5 font-mono p-3 text-black text-xs">
+            <div className="mt-5 flex flex-col items-center justify-between h-25 w-65 bg-white border-black border-5 font-mono p-3 text-black text-xs">
               <div className="text-left font-bold">
-                <div>A Wheel Good Fit: AWGF 2025</div>
-                <div className="inline-block">
+                <div>A Wheel Good Fit: PEEK Project</div>
+                <div className="text-center">
                   Press start to begin<span className="blinking-cursor">_</span>
                 </div>
               </div>

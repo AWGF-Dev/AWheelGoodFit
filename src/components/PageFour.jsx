@@ -319,48 +319,336 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
           <p className="text-gray-700 text-xl font-Rob">
             Clients require different levels of support depending on their sitting balance.
           </p>
-          <h2 className="text-gray-700 text-4xl font-Cap">
-            Hands-Free Sitter
-          </h2>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Hands-Free Sitter.
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+           A person who can sit upright without using their hands for support.
+          </p>
+          <ul className="list-disc ml-12 space-y-4 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Implication:</b> Strong, voluntary control of their trunk muscles
+            </li>
+            <li>
+              <b>Seating & Support Needs:</b>
+              <ul className="list-disc ml-12 space-y-2 mt-4">
+                <li>
+                  <b>Minimal Support Required:</b> Users typically need only a basic backrest 
+                  (often stopping below the shoulder blades) to allow for full upper limb range of movement.
+                </li>
+                <li>
+                  <b>Cushion Focus:</b> The primary consideration is pressure management. A simple foam cushion may be sufficient, 
+                  but those with reduced sensation may need a more contoured cushion to distribute pressure and prevent skin issues.
+                </li>
+                <li>
+                  <b>Other Components:</b> Usually, only a footplate and possibly a pelvic belt are needed.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <span className="text-gray-700 text-xl font-Rob font-bold mt-10">
+            Hands-Dependent Sitter
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            A person who uses one or both hands on a surface to maintain their sitting balance.
+          </p>
+          <ul className="list-disc ml-12 space-y-4 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Implication:</b> Strong, voluntary control of their trunk muscles
+            </li>
+            <li>
+              <b>Seating & Support Needs:</b>
+              <ul className="list-disc ml-12 space-y-2 mt-4">
+                <li>
+                  <b>Minimal Support Required:</b> Users typically need only a basic backrest 
+                  (often stopping below the shoulder blades) to allow for full upper limb range of movement.
+                </li>
+                <li>
+                  <b>Cushion Focus:</b> The primary consideration is pressure management. A simple foam cushion may be sufficient, 
+                  but those with reduced sensation may need a more contoured cushion to distribute pressure and prevent skin issues.
+                </li>
+                <li>
+                  <b>Other Components:</b> Usually, only a footplate and possibly a pelvic belt are needed.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Prop Sitter
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            A person who is unable to sit upright without significant external support.
+          </p>
+          <ul className="list-disc ml-12 space-y-4 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Implication:</b> Trunk muscles are not strong enough to hold them upright against gravity without assistance
+            </li>
+            <li>
+              <b>Seating & Support Needs:</b>
+              <ul className="list-disc ml-12 space-y-2 mt-4">
+                <li>
+                  <b>Trunk Support is Key:</b> Users need a backrest that provides both posterior and lateral support to free up their hands for tasks.
+                </li>
+                <li>
+                  <b>Stability & Pressure:</b> They often cannot shift weight easily, so a more supportive and deeply contoured seat cushion is required for stability and superior pressure distribution.
+                </li>
+                <li>
+                  <b>Additional Components:</b> Often require pelvic belts, arm supports, and possibly a headrest for vehicle travel.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
         </>
       )
     },
     {
       id: "5",
-      label: "Postural Support Devices",
+      label: "Posture and Sitting",
       content: (
         <>
-          <p className="text-gray-700 text-xl font-Pixelmono">
-            Acknowledge the art of toe man
+          <h2 className="text-gray-700 text-4xl font-Cap">
+            Postural Abnormalities
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            Postural abnormalities are either <b>reducible</b> (flexible) or <b>non-reducible</b> (fixed). To optimise function, proper support should be in place to accommodate for, or to correct abnormal postural.
           </p>
-          <div className="h-64 bg-gray-200 rounded"></div>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            &gt; Reducible Postures
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            A reducible posture demonstrates flexibility, allowing movement from the abnormal position towards a more upright and midline alignment. However, this flexibility also permits movement into further deformity. Thus, the clinical goal is to achieve correction guided by the individual's tolerance.
+          </p>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            &gt; Non-Reducible Postures
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            A non-reducible posture is fixed due to soft tissue or joint limitations that prevent the client from achieving an upright, midline position. Movement is only possible into further deformity, so the primary goal shifts from correction to accommodation within the existing postural alignment.
+          </p>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Seating and Pressure Management
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            The primary aim of pressure management in wheelchair seating is to provide a stable seating system that distributes pressure away from vulnerable areas, allowing tissues to sustain the load without injury for a reasonable period of time.
+          </p>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            Cushion design strategies to limit these peak pressures are generally based on the principles of immersion (allowing the body to sink into the cushion), envelopment (the cushion conforming to the body's shape), and pre-contouring (shaping the cushion to match typical anatomy).
+          </p>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Further Resources
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            The full complexities of seating, pressure management and approaches to seating intervention are beyond the scope of this resource. However, please see the follow resources for further information:
+          </p>
+          <ul className="ml-6 space-y-3 text-blue-700 text-xl font-Rob">
+            <li>
+              <a
+                href="https://aci.health.nsw.gov.au/__data/assets/pdf_file/0006/312792/ACI-SSCIS-RD6.1-hints-checking-commonly-used-cushions.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-violet-800 underline transition-colors duration-200"
+              >
+                Spinal Seating Professional Development Project Assessment Form RD6.1: Handy Hints for Checking Commonly Used Cushions
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://1624307.fs1.hubspotusercontent-na1.net/hubfs/1624307/Education%20Resources/General%20Rehab%20Seating%20%26%20Positioning%20Guide.pdf?utm_medium=email&_hsenc=p2ANqtz-_9FySKdn6mHEFlPrhgwCTjZJV_YYBj2AiolC9OPMqzG6_fw0eGyI821UNmpjlsKeM1TuVUGN0GyouZEK6n2KcoOEWzNw&_hsmi=331724455&utm_content=331724455&utm_source=hs_automation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-violet-800 underline transition-colors duration-200"
+              >
+                Seating & Positioning Guide: A comprehensive introduction to seating and positioning
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/13e2Q4RW83L3luzgxRhBBPgygmpprbZps/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-violet-800 underline transition-colors duration-200"
+              >
+                Wheelchair Service Training Package: Trainer’s Manual, Intermediate Level
+              </a>
+            </li>
+          </ul>
+
         </>
       )
     },
     {
       id: "6",
-      label: "Fitting Checklist: Posture",
+      label: "Postural Support Devices",
       content: (
         <>
-          <p className="text-gray-700 text-xl font-Pixelmono">
-            Acknowledge the art of toe man
+          <p className="text-gray-700 text-xl font-Rob">
+            This section focuses on postural support devices for hands-free sitters.
           </p>
-          <div className="h-64 bg-gray-200 rounded"></div>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Head & Neck Support
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob">
+            The type of support is determined by the user's specific needs and the degree of support required.
+          </p>
+          <ul className="list-disc ml-12 space-y-4 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Examples of Types of Support:</b>
+              <ul className="list-disc ml-12 space-y-2 mt-4">
+                <li>
+                  <b>Flat Headrest:</b> Provides minimal support; prevents the head from extending backward, especially in tilted/reclined systems.
+                </li>
+                <li>
+                  <b>Flip-Down or Removable Headrest:</b> Facilitates transfers by moving out of the way easily.
+                </li>
+                <li>
+                  <b>Curved or Winged Headrest:</b> Adds lateral contours to gently keep the head centered.
+                </li>
+                <li>
+                  <b>Occipital Headrest / Neck Yoke:</b> A U-shaped support that provides moderate lateral support and encourages neck flexion.
+                </li>
+                <li>
+                  <b>Lateral Head Supports:</b> Padded arms on both sides for a high degree of lateral control and stability.
+                </li>
+                <li>
+                  <b>Head Sling:</b> A molded, reinforced shelf to fully support the head for conditions like hydrocephalus.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Back Supports
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob">
+            Contour and stability may be added via carved foam, custom molds, or lateral supports for lateral stability.
+          </p>
+          <ul className="list-disc ml-12 space-y-4 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Examples of Specialised Systems:</b>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li>
+                  <b>Scoliosis Supports:</b> Wrap-around designs with quick-adjust mechanisms and straps for maximum support and easier transfers.
+                </li>
+                <li>
+                  <b>Spasticity Supports:</b> Side-wings or wrap-around backrests act as barriers to confine the user within the chair.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Comfort Features:</b>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li>
+                  <b>Lumbar Support:</b> Helps maintain the spine's natural curvature, improving comfort, balance, and mobility.
+                </li>
+                <li>
+                  <b>Padding & Safety:</b> All supports require padding (8–25mm); the user must be isolated from any fasteners.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Pelvic Positioning
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob">
+            Proper positioning starts with correct seat depth.
+          </p>
+          <ul className="list-disc ml-12 space-y-2 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Clearance:</b> Ensure space behind the knees (~25mm for children, ~50mm for adults).
+            </li>
+            <li>
+              <b>Hip Angle:</b> Adjusted via the backrest pivot or (on some chairs) the seat angle.
+            </li>
+          </ul>
+          <div className="ml-12 text-gray-700 text-xl font-Rob space-y-4">
+            <span className="font-bold">Examples of Support Devices:</span>
+            <ul className="list-disc ml-12 space-y-4 mt-4">
+              <li>
+                <b>Pelvic Belt / Subasis Bar</b>
+                <ul className="list-disc ml-12 space-y-2 mt-2">
+                  <li><b>Purpose:</b> Prevents sliding forward and corrects slouching.</li>
+                  <li><b>Fit:</b> Snug, allowing about two fingers between the belt and abdomen.</li>
+                  <li><b>Safety:</b> The latch must be secure and match the user's abilities.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Antithrust Cushion</b>
+                <ul className="list-disc ml-12 space-y-2 mt-2">
+                  <li><b>Purpose:</b> Positions the ischial tuberosities to maintain a neutral pelvis.</li>
+                  <li><b>Placement:</b> The "step" must be in front of the sitting bones.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Abduction Pommel</b>
+                <ul className="list-disc ml-12 space-y-2 mt-2">
+                  <li><b>Purpose:</b> Promotes hip joint alignment; counters inward hip adduction.</li>
+                  <li><b>Placement:</b> Sized to be clear of the groin. Not for keeping the user in the seat.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <p className="text-gray-700 text-xl font-Rob ml-12">
+            <b>Safety Note:</b> Improperly adjusted pelvic belts can cause the user to slump, leading to bruising from thoracic supports or, in severe cases, choking. Systems must work in concert and be correctly fitted.
+          </p>
+
+          
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Chest & Thoracic Support
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob">
+            These help the user remain upright and provide medio-lateral stability for those with reduced trunk control.
+          </p>
+          <div className="ml-12 text-gray-700 text-xl font-Rob space-y-6">
+            <span className="font-bold">Types of Support:</span>
+            <ul className="list-disc ml-12 space-y-4 mt-2">
+              <li>
+                <b>H-Strap / Thoracic Vest:</b>
+                <ul className="list-disc ml-12 space-y-2 mt-2">
+                  <li>A strap system with a chest pad that wraps around the chest and over the shoulders.</li>
+                  <li>Secured with D-rings, Velcro, or buckles.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Lateral Thoracic Supports:</b>
+                <ul className="list-disc ml-12 space-y-2 mt-2">
+                  <li>Padded metal brackets that provide side support.</li>
+                  <li>Can be removable or swing-away for transfers.</li>
+                </ul>
+              </li>
+            </ul>
+            <span className="font-bold">Fitting & Safety Notes:</span>
+            <ul className="list-disc ml-12 space-y-4 mt-2">
+              <li>Must be used with a pelvic support. Without it, the user can slide down, and the chest support can restrict breathing, posing the risk of injury or death.</li>
+              <li>
+                <b>Positioning:</b>
+                <ul className="list-disc ml-12 space-y-2 mt-2">
+                  <li>The top of the chest pad or support must be at least 1 inch (25mm) below the sternal notch and must never rub the neck.</li>
+                  <li>Lateral thoracic supports should be at mid-chest level (approx. nipple line), never in the underarms.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Tightness:</b>
+                <ul className="list-disc ml-12 space-y-2 mt-2">
+                  <li>Should be snug but not tight. You should be able to fit adult fingers between the support and the chest.</li>
+                  <li>Must not squeeze the chest or compromise breathing.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Final Check:</b>
+                <ul className="list-disc ml-12 space-y-2 mt-2">
+                  <li>Once all supports are adjusted, the user should be centered in the seat with their pelvis against the backrest, hips level, and weight evenly distributed.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </>
       )
     },
     {
       id: "7",
-      label: "References",
+      label: "Fitting Checklist: Posture",
       content: (
         <>
           <PageFourChecklist />
-          <p className="text-gray-700 text-xl font-Pixelmono">
-            I sure hope this checklist above works!
-          </p>
-          <div className="h-64 bg-gray-200 rounded"></div>
-
-
         </>
       )
     }

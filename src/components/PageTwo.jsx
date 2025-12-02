@@ -139,49 +139,49 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
       label: "References",
       content: (
         <>
-          <div className="text-sm">
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Burrola-Mendez, Y., Kamalakannan, S., Rushton, P. W., Bouziane, Selsabil-A., Giesbrecht, E., Kirby, R. L., Gowran, R. J., Rusaw, D. F., Tasiemski, T., Goldberg, M., Tofani, M., Pedersen, J. P., & Pearlman, J. (2022). Wheelchair service provision education for healthcare professional students, healthcare personnel and educators across low- to high-resourced settings: a scoping review. <span className="pixel-italic">Disability and Rehabilitation: Assistive Technology</span>, 1–22. https://doi.org/10.1080/17483107.2022.2037757
+          <div className="text-sm font-YakuHanJP">
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Burrola-Mendez, Y., Kamalakannan, S., Rushton, P. W., Bouziane, Selsabil-A., Giesbrecht, E., Kirby, R. L., Gowran, R. J., Rusaw, D. F., Tasiemski, T., Goldberg, M., Tofani, M., Pedersen, J. P., & Pearlman, J. (2022). Wheelchair service provision education for healthcare professional students, healthcare personnel and educators across low- to high-resourced settings: a scoping review. <i>Disability and Rehabilitation: Assistive Technology</i>, 1–22. https://doi.org/10.1080/17483107.2022.2037757
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Gallagher, A., Cleary, G., Clifford, A., McKee, J., O’Farrell, K., & Gowran, R. J. (2020). “Unknown world of wheelchairs” A mixed methods study exploring experiences of wheelchair and seating assistive technology provision for people with spinal cord injury in an Irish context. <span className="pixel-italic">Disability and Rehabilitation</span>, 44(10), 1–13. https://doi.org/10.1080/09638288.2020.1814879
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Gallagher, A., Cleary, G., Clifford, A., McKee, J., O’Farrell, K., & Gowran, R. J. (2020). “Unknown world of wheelchairs” A mixed methods study exploring experiences of wheelchair and seating assistive technology provision for people with spinal cord injury in an Irish context. <i>Disability and Rehabilitation, 44</i>(10), 1–13. https://doi.org/10.1080/09638288.2020.1814879
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Goldberg, M., Rushton, P., Kirby, R. L., Muñera, S., Kandavel, K., Pearlman, J., & Tawashy, A. (2022). Wheelchair service provision content in professional rehabilitation organisations’ standards documents and contemporary initiatives: a rapid review. <span className="pixel-italic">Disability and Rehabilitation: Assistive Technology</span>, 1–12. https://doi.org/10.1080/17483107.2022.2063421
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Goldberg, M., Rushton, P., Kirby, R. L., Muñera, S., Kandavel, K., Pearlman, J., & Tawashy, A. (2022). Wheelchair service provision content in professional rehabilitation organisations’ standards documents and contemporary initiatives: a rapid review. <i>Disability and Rehabilitation: Assistive Technology</i>, 1–12. https://doi.org/10.1080/17483107.2022.2063421
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Hoffmann, T., Bennett, S., & Mar, C. D. (2017). <span className="pixel-italic">Evidence-based practice across the health professions</span> (3rd ed.). Elsevier.
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Hoffmann, T., Bennett, S., & Mar, C. D. (2017). <i>Evidence-based practice across the health professions</i> (3rd ed.). Elsevier.
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Kara, A., Mintu-Wimsatt, A., & Spillan, J. E. (2022). An application of the net promoter score in higher education. <span className="pixel-italic">Journal of Marketing for Higher Education</span>, 1–24. https://doi.org/10.1080/08841241.2021.2018088
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Kara, A., Mintu-Wimsatt, A., & Spillan, J. E. (2022). An application of the net promoter score in higher education. <i>Journal of Marketing for Higher Education</i>, 1–24. https://doi.org/10.1080/08841241.2021.2018088
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Lewis, J. R., Utesch, B. S., & Maher, D. E. (2013). UMUX-LITE: When There’s No Time for the SUS. <span className="pixel-italic">Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</span>, 2099–2102. https://doi.org/10.1145/2470654.2481287
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Lewis, J. R., Utesch, B. S., & Maher, D. E. (2013). UMUX-LITE: When There’s No Time for the SUS. <i>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</i>, 2099–2102. https://doi.org/10.1145/2470654.2481287
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Lindner, J. R., & Lindner, N. (2024). Interpreting Likert type, summated, unidimensional, and attitudinal scales: I neither agree nor disagree, Likert or not. <span className="pixel-italic">Advancements in Agricultural Development</span>, 5(2), 152–163. https://doi.org/10.37433/aad.v5i2.351
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Lindner, J. R., & Lindner, N. (2024). Interpreting Likert type, summated, unidimensional, and attitudinal scales: I neither agree nor disagree, Likert or not. <i>Advancements in Agricultural Development, 5</i>(2), 152–163. https://doi.org/10.37433/aad.v5i2.351
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Nghiem, S., Campbell, J., Walker, R. M., Byrnes, J., & Chaboyer, W. (2022). Pressure injuries in Australian public hospitals: a cost of illness study. <span className="pixel-italic">International Journal of Nursing Studies</span>, 130(1), 104191. https://doi.org/10.1016/j.ijnurstu.2022.104191
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Nghiem, S., Campbell, J., Walker, R. M., Byrnes, J., & Chaboyer, W. (2022). Pressure injuries in Australian public hospitals: a cost of illness study. <i>International Journal of Nursing Studies, 130</i>(1), 104191. https://doi.org/10.1016/j.ijnurstu.2022.104191
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Sprigle, S. (2023). Measure It: Proper Wheelchair Fit Is Key to Ensuring Function while Protecting Skin Integrity. <span className="pixel-italic">Advances in Skin & Wound Care</span>, 36(8), 404–413. https://doi.org/10.1097/asw.0000000000000001
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Sprigle, S. (2023). Measure It: Proper Wheelchair Fit Is Key to Ensuring Function while Protecting Skin Integrity. <i>Advances in Skin & Wound Care, 36</i>(8), 404–413. https://doi.org/10.1097/asw.0000000000000001
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Toro-Hernández, M. L., Mondragón-Barrera, M. A., Torres-Narváez, M. R., Velasco-Forero, S. E., & Goldberg, M. (2019). Undergraduate physiotherapy students’ basic wheelchair provision knowledge: a pilot study in two universities in Colombia. <span className="pixel-italic">Disability and Rehabilitation: Assistive Technology</span>, 15(3), 336–341. https://doi.org/10.1080/17483107.2019.1580776
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Toro-Hernández, M. L., Mondragón-Barrera, M. A., Torres-Narváez, M. R., Velasco-Forero, S. E., & Goldberg, M. (2019). Undergraduate physiotherapy students’ basic wheelchair provision knowledge: a pilot study in two universities in Colombia. <i>Disability and Rehabilitation: Assistive Technology, 15</i>(3), 336–341. https://doi.org/10.1080/17483107.2019.1580776
           </p>
 
-          <p className="text-gray-700 font-Rob leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            World Health Organization. (2023). <span className="pixel-italic">Wheelchair provision guidelines</span>. World Health Organization.
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            World Health Organization. (2023). <i>Wheelchair provision guidelines</i>. World Health Organization.
           </p>
 
           </div>

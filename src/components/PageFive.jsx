@@ -169,16 +169,16 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
           </thead>
           <tbody>
             <tr>
-              <td className="border border-gray-300 px-4 py-2 font-bold">Non-rigid Frame Wheelchairs</td>
-              <td className="border border-gray-300 px-4 py-2 align-top">
+              <td className="border border-gray-300 px-4 py-2 font-bold text-gray-700">Non-rigid Frame Wheelchairs</td>
+              <td className="border border-gray-300 px-4 py-2 text-gray-700 align-top">
                 <ul className="list-disc ml-6 space-y-2">
                   <li><b>Folding mechanism:</b> Common and more intuitive than disassembly</li>
                   <li><b>Shock absorption:</b> Better shock absorption over uneven surfaces</li>
                   <li><b>Removable foot supports:</b> Helps facilitate standing transfers</li>
                 </ul>
               </td>
-              <td className="border border-gray-300 px-4 py-2 align-top">
-                <ul className="list-disc ml-6 space-y-2">
+              <td className="border border-gray-300 px-4 py-2 text-gray-700 align-top">
+                <ul className="list-disc ml-6 space-y-2 text-gray-700">
                   <li><b>Weight:</b> Heavier, due to folding mechanism components</li>
                   <li><b>Propulsion efficiency:</b> Reduced, as energy is dissipated through the flexed cross-brace frame</li>
                   <li><b>Durability:</b> Lower, due to moving and removable parts</li>
@@ -187,17 +187,17 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-2 font-bold">Rigid Frame Wheelchairs</td>
-              <td className="border border-gray-300 px-4 py-2 align-top">
-                <ul className="list-disc ml-6 space-y-2">
+              <td className="border border-gray-300 px-4 py-2 font-bold text-gray-700">Rigid Frame Wheelchairs</td>
+              <td className="border border-gray-300 px-4 py-2 align-top text-gray-700">
+                <ul className="list-disc ml-6 space-y-2 text-gray-700">
                   <li><b>Weight:</b> Lighter with fewer moving parts</li>
                   <li><b>Propulsion efficiency:</b> Increased, due to weight and decreased flex in the frame</li>
                   <li><b>Durability:</b> Higher, due to structural rigidity and fewer moving parts</li>
                   <li><b>Maneuverability:</b> Slightly increased, due to foot support design and shorter overall length</li>
                 </ul>
               </td>
-              <td className="border border-gray-300 px-4 py-2 align-top">
-                <ul className="list-disc ml-6 space-y-2">
+              <td className="border border-gray-300 px-4 py-2 align-top text-gray-700">
+                <ul className="list-disc ml-6 space-y-2 text-gray-700">
                   <li><b>Disassembly:</b> Less intuitive than a folding mechanism</li>
                   <li><b>Shock absorption:</b> Decreased due to frame rigidity</li>
                 </ul>
@@ -240,21 +240,26 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
           <p><b>&gt; Cantilever frame</b></p>
         </div>
         <div className="text-gray-700 text-xl font-Rob space-y-4">
+          <img
+            src={getAssetUrl("placeholder.png")}
+            alt="Wheelbarrow diagram"
+            className="float-right w-100 h-auto rounded-lg shadow ml-4 mb-2 border-2"
+          />
           <span className="font-bold">Box frames</span>
-            <ul className="list-disc ml-12 space-y-2 mt-2">
-              <li>Commonly found in rigid-frame wheelchairs, where they form the main structural rectangle.</li>
-              <li>The design is characterised by frame members arranged in a rectangular, box-like shape.</li>
-              <li>This geometry provides excellent vertical rigidity and torsional strength, resulting in a highly durable and stable frame.</li>
-              <li>Due to this inherent stiffness, the frame itself is not the most effective for vibration dispersion, resulting in the transfer of ‘road noise’ to the user.</li>
-              <li>In this design, suspension and shock absorption are the responsibility of other components, such as the tires and cushion. The frame's primary role is to provide a solid, rigid foundation.</li>
-            </ul>
+          <ul className="list-disc ml-12 space-y-2 mt-2">
+            <li>Commonly found in rigid-frame wheelchairs, where they form the main structural rectangle.</li>
+            <li>The design is characterised by frame members arranged in a rectangular, box-like shape.</li>
+            <li>This geometry provides excellent vertical rigidity and torsional strength, resulting in a highly durable and stable frame.</li>
+            <li>Due to this inherent stiffness, the frame itself is not the most effective for vibration dispersion, resulting in the transfer of ‘road noise’ to the user.</li>
+            <li>In this design, suspension and shock absorption are the responsibility of other components, such as the tires and cushion. The frame's primary role is to provide a solid, rigid foundation.</li>
+          </ul>
         </div>
-        <img
-          src={getAssetUrl("placeholder.png")}
-          alt="Wheelbarrow diagram"
-          className="w-175 h-auto rounded-lg shadow mx-auto"
-        />
-        <div className=" text-gray-700 text-xl font-Rob">
+        <div className="text-gray-700 text-xl font-Rob space-y-4">
+          <img
+            src={getAssetUrl("beans1.png")}
+            alt="Wheelbarrow diagram"
+            className="float-right w-100 h-auto rounded-lg shadow ml-4 mb-2 border-2"
+          />
           <span className="font-bold">Dual tube frames</span>
           <ul className="list-disc ml-12 space-y-2 mt-2">
             <li>Feature a second, (often triangulated) frame tube, which creates a structure that balances rigidity for propulsion efficiency with controlled flex for shock absorption.</li>
@@ -263,18 +268,19 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
             <li>The compact, often tapered shape of the frame can improve transportability by reducing the overall folded width of the wheelchair.</li>
           </ul>
         </div>
-        <img
-          src={getAssetUrl("placeholder.png")}
-          alt="Wheelbarrow diagram"
-          className="w-175 h-auto rounded-lg shadow mx-auto"
-        />
-        <div className=" text-gray-700 text-xl font-Rob">
+
+        <div className="text-gray-700 text-xl font-Rob space-y-4">
+          <img
+            src={getAssetUrl("beans2.png")}
+            alt="Wheelbarrow diagram"
+            className="float-right w-100 h-auto rounded-lg shadow ml-4 mb-2 border-2"
+          />
           <span className="font-bold">Cantilever frames</span>
           <ul className="list-disc ml-12 space-y-2 mt-2">
             <li>Are exclusive to rigid wheelchairs, where the front and rear sections are connected by a single main tube, resembling a cantilever beam anchored at the rear wheels.</li>
             <li>They are among the most compact for transport and the lightest type of rigid frame available.</li>
             <li>
-              <span className="">Design principles include:</span>
+              <span>Design principles include:</span>
               <ol className="list-decimal ml-8 space-y-2 mt-4">
                 <li><b>Built-in suspension:</b> The frame's controlled flex absorbs vibration and shock, providing a smoother ride than a fully rigid frame.</li>
                 <li><b>Structural efficiency:</b> The use of fewer tubes positioned closer to the user makes the chair lightweight and reduces its visual bulk.</li>
@@ -283,11 +289,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
             </li>
           </ul>
         </div>
-        <img
-          src={getAssetUrl("placeholder.png")}
-          alt="Wheelbarrow diagram"
-          className="w-175 h-auto rounded-lg shadow mx-auto"
-        />
+
         <h2 className="text-gray-700 text-4xl font-Cap">
           Folding mechanisms
         </h2>
@@ -390,7 +392,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
               <ul className="list-disc ml-8 space-y-2 mt-2">
                 <li>Extremely stiff and offers high tensile strength.</li>
                 <li>Very low density, offers superior weight reduction without compromising rigidity.</li>
-                <li>Demonstrates the lowest vibration transmission (Chenier & Aissaoui, 2014; Lariviere et al., 2021).</li>
+                <li>Demonstrates the lowest vibration transmission.</li>
               </ul>
             </li>
             <li>
@@ -588,11 +590,6 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
               <b>Aluminium/Metal Alloy:</b> Offers superior durability and strength, better withstanding impacts and heavy use.
             </li>
           </ul>
-
-
-
-
-
         </>
       )
     },
@@ -601,39 +598,274 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
       label: "Armrests",
       content: (
         <>
-          <p className="text-gray-700 text-xl font-Pixelmono">
-            Additional studies and references can be found in medical journals and historical archives.
+          <p className="text-gray-700 text-xl font-Rob">
+            Armrests provide <b>lateral support</b> and serve as <b>stabilising handles</b> when the user leans to either side. They also improve <b>comfort, function, and wheelchair aesthetics</b>, and help <b>protect clothing</b> from wheel contact.
           </p>
-          <div className="h-64 bg-gray-200 rounded"></div>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Primary Functions
+          </span>
+          <ul className="list-disc ml-12 space-y-2 mt-2 text-gray-700 text-xl font-Rob mt-4">
+            <li>Provide <b>upper-limb and trunk support</b>.</li>
+            <li>Serve as <b>handholds</b> for repositioning or leaning.</li>
+            <li>Enable <b>pressure relief strategies</b>.</li>
+            <li>Help maintain <b>cleanliness</b> by shielding clothing from wheels.</li>
+            <li>Support <b>reaching tasks</b> by providing leverage or stability.</li>
+          </ul>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Armrest Styles
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob">
+            Armrests are categorised by their design and length, each offering distinct functional trade-offs between support, access, and chair width. Styles include:
+          </p>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Wrap-Around Armrests
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            Mounted to the rear of the frame, these wrap forward along the backrest canes. Their key advantage is that they do not increase overall chair width, enhancing manoeuvrability for active users. A limitation is that they offer no side-guard protection, allowing clothing to contact the wheels.
+          </p>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Full-Length Armrests
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+           These extend along almost the entire forearm, providing maximum support. Common in power chairs for mounting controls, they offer excellent side-guard protection. Their full length restricts close access to tables and desks. They increase the chair's overall width.
+          </p>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Desk-Length Armrests
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+            A shorter variant of the full-length style, desk-length armrests provide side-guard protection while allowing the user to position closer to tables and desks for daily activities. Like full-length styles, they are side-mounted and will increase chair width.
+          </p>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Armrest Adjustability & Mounting
+          </h2>
+          <ul className="list-disc ml-12 space-y-2 mt-2 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Height:</b> Armrests can be fixed-height or adjustable to match the user's trunk and arm length.
+            </li>
+            <li>
+              <b>Function:</b> Most designs feature a user-accessible latch that allows the armrest to flip back or detach completely, facilitating transfers or side-leaning.
+            </li>
+            <li>
+              <b>Safety Note:</b> While engineered latches on some models permit assisted lifting of the chair with the user seated, many designs will detach under upward force and are not intended for this purpose.
+            </li>
+          </ul>
+
+
         </>
       )
     },
     {
       id: "7",
-      label: "Legrests",
+      label: "Footrests",
       content: (
         <>
-          <p className="text-gray-700 text-xl font-Pixelmono">
-            Additional studies and references can be found in medical journals and historical archives.
+          <p className="text-gray-700 text-xl font-Rob">
+           Footrests are critical for seated stability, pelvic alignment, and upper limb function. They are available as fixed, folding, or swing-away designs.
           </p>
-          <div className="h-64 bg-gray-200 rounded"></div>
+          <p className="text-gray-700 text-xl font-Rob">
+            Proper adjustment is essential: a footrest that is too long results in a loss of optimal lower limb posture, compromised pelvic stability, and discomfort. Types of footrests and legrests include:
+          </p>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Tubular Rigid Footrests
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+           These provide maximum rigidity and durability, ideal for sports and highly active users. Their fixed position requires adapted transfer techniques, most commonly a side-to-side transfer, though skilled users can perform forward transfers.
+          </p>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Swing-Away Footrests
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+           Common on folding wheelchairs, these footrests fold upwards and swing laterally to clear the front area of the wheelchair, facilitating forward and standing transfers. They also shorten the wheelchair for transport and narrow access. While less durable than rigid designs, they provide a fixed knee and ankle angle to maintain postural alignment.
+          </p>
+          <span className="text-gray-700 text-xl font-Rob font-bold">
+            Elevating Legrests
+          </span>
+          <p className="text-gray-700 text-xl font-Rob mt-2">
+           Elevating legrests extend the overall length of the wheelchair, which increases its turning radius and reduces manoeuvrability. They are indicated for users who cannot achieve the standard legrest angle due to reduced flexibility (e.g., from knee contractures) or who require periodic postural changes for physiological management. A primary function is to assist in reducing lower-limb oedema and venous pooling by elevating the extremities.
+          </p>
+          <img
+            src={getAssetUrl("/pg5_3.png")}
+            alt="Wheelbarrow diagram"
+            className="w-240 h-auto shadow mx-auto border-2"
+          />
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Anti-Tip Rollers (Forward)
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob">
+           Forward anti-tip rollers are attachments that can be fitted to both rigid and swing-away footrests. Originally designed for wheelchair sports such as basketball and quad rugby (where rules mandate their use to prevent forward falls and floor damage), they can also benefit everyday users at risk of tipping forwards. A critical clinical consideration is their height adjustment; they must be set high enough to avoid catching on common obstacles like thresholds and pavement cracks, which would impede mobility.
+          </p>
+          
+          
         </>
       )
     },
     {
       id: "8",
-      label: "Configuration",
+      label: "Wheel Locks",
       content: (
         <>
-          <p className="text-gray-700 text-xl font-Pixelmono">
-            Additional studies and references can be found in medical journals and historical archives.
+
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Engagement Mechanism: Push vs. Pull
+          </h2>
+          <p className="text-gray-700 text-xl font-Rob">
+            <b>Note:</b> Changes to wheel specifications—such as size, tire type, air pressure, or axle position—may affect wheel lock function and engagement.
           </p>
-          <div className="h-64 bg-gray-200 rounded"></div>
+          <ul className="list-disc ml-12 space-y-2 mt-2 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Push-to-Lock:</b> Engaged by pushing the lever down and away. As greater force is required for engagement than disengagement, the design is often preferred as it allows the user to apply force with the palm.
+            </li>
+            <li>
+              <b>Pull-to-Lock:</b> Engaged by pulling a lever up towards the user. This may be suitable for clients with stronger grip strength and pulling ability, but is less intuitive for most.
+            </li>
+          </ul>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Mounting Position
+          </h2>
+          <ul className="list-disc ml-12 space-y-4 mt-2 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>High Wheel Locks</b>
+              <ul className="list-disc ml-8 space-y-2 mt-2">
+                <li><b>Mounting:</b> Attached to the upper side frame tube.</li>
+                <li><b>Advantage:</b> Requires the least dexterity and trunk flexion to operate.</li>
+                <li><b>Disadvantage:</b> Disengaged levers can swing and hit or trap fingers. This risk can be mitigated by selecting retractable (scissor/butterfly) designs or opting for low wheel locks.</li>
+              </ul>
+            </li>
+            <li>
+              <b>Low Wheel Locks</b>
+              <ul className="list-disc ml-8 space-y-2 mt-2">
+                <li><b>Mounting:</b> Attached to the lower side frame tube.</li>
+                <li><b>Advantage:</b> Prevents thumb jamming and can accommodate a wide range of wheel camber angles.</li>
+                <li><b>Disadvantage:</b> Requires greater mobility, reach, and trunk flexion to operate, making them more difficult for many users.</li>
+              </ul>
+            </li>
+          </ul>
+          <h2 className="text-gray-700 text-4xl font-Cap mt-10">
+            Adaptations & Other Types
+          </h2>
+          <ul className="list-disc ml-12 space-y-2 mt-2 text-gray-700 text-xl font-Rob">
+            <li>
+              <b>Extension Levers:</b> Can be added for users with limited reach, strength, or range of motion.
+            </li>
+            <li>
+              <b>Sweeper Brakes:</b> Allow for adjustable braking force.
+            </li>
+            <li>
+              <b>Hub Locks:</b> A cable-actuated system where a piston engages directly at the wheel hub, often providing a very secure lock.
+            </li>
+            <li>
+              <b>Attendant Locks:</b> Mounted to the rear of the wheelchair frame to be operated by a carer or assistant.
+            </li>
+          </ul>
         </>
       )
     },
     {
       id: "9",
+      label: "Chair Configuration",
+      content: (
+        <>
+          <p className="text-gray-700 text-xl font-Rob">
+            The following guidelines provide a starting point for wheelchair configuration, though clinical decision-making must be applied in every individual case. These recommendations have been synthesised from general principles in the literature and clinical manuals, notably informed by Worobey et al. (2023) and Lange & Minkel (2025), and should be adapted according to specific user assessment and context.
+          </p>
+          <div className="text-gray-700 text-xl font-Rob space-y-6">
+            <div>
+              <span className="font-bold">Seat Width</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b> Add 1.25–2 inches to the user's hip width for clothing and to prevent skin irritation.</li>
+                <li>
+                  <b>Too Wide:</b>
+                  <ul className="list-disc ml-8 space-y-2 mt-2">
+                    <li>Compromises pelvic positioning and trunk alignment, reducing sitting stability.</li>
+                    <li>Decreases maneuverability and access through doorways.</li>
+                    <li>For self-propellers: Reduces wheel access and propulsion efficiency, forcing the arms into a position that increases the risk of shoulder and wrist injury.</li>
+                  </ul>
+                </li>
+                <li><b>Too Narrow:</b> Can cause pelvic rotation and pressure injuries on the outer hips.</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">Seat Depth</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b> For self-propelling adults, the seat depth should be at least 2 inches (50mm) shorter than the user's buttock-thigh length. For children, about 1 inch (25mm) is appropriate.</li>
+                <li><b>Too Long:</b> Causes the user to slide forward, leading to a posterior pelvic tilt, improper leg positioning, and reduced maneuverability.</li>
+                <li><b>Too Short:</b> Provides inadequate thigh support, increasing pressure on the buttocks and the risk of pressure ulcers.</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">Seat-to-Footrest Length</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b> Set to provide a 2-inch footrest clearance from the floor, with no gap between the thighs and the seat cushion.</li>
+                <li><b>Footplate Too High:</b> Increases pressure on the buttocks, raising the risk of pressure injuries.</li>
+                <li><b>Footplate Too Low:</b> Decreases stability, causes footrests to contact the ground, and increases the risk of falling.</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">Seat Height & Wheel Position</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b> Ensure footrests clear the ground and the user's elbow is at a 100–120° angle when their hand is on top of the pushrim.</li>
+                <li><b>Seat Too High:</b> Hinders table access and transfers; results in a short, inefficient push stroke.</li>
+                <li><b>Seat Too Low:</b> Causes footrests to hit the floor and forces the user into a poor shoulder position, increasing injury risk.</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">Wheel Axle Position</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b> A common starting point is aligning the axle with the user's middle finger when their arm hangs straight down.</li>
+                <li><b>Too Far Forward:</b> Makes the chair unstable and prone to tipping backwards.</li>
+                <li><b>Too Far Back:</b> Makes the chair harder to propel and reduces functional efficiency.</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">Seat Slope</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b> A slight posterior slope (where the rear of the seat is lower than the front) is standard. A common starting point is a 2-inch difference.</li>
+                <li><b>Benefits:</b> Utilises gravity to improve pelvic and trunk stability, helps prevent the user from sliding forward in the seat (sacral sitting).</li>
+                <li><b>Considerations:</b> A steep slope can make transfers challenging, reduce effective reach to the pushrims and impact foot propulsion.</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">Rear Wheel Camber</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b> 2 to 5 degrees is typical for most users.</li>
+                <li><b>Benefits:</b> Improves propulsion access and lateral stability.</li>
+                <li><b>Consideration:</b> Increases the overall width of the wheelchair, which may limit access in tight spaces.</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">Back Support Height</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b></li>
+                <ul className="list-disc ml-8 space-y-2 mt-2">
+                  <li><b>Limited Trunk Control:</b> Position the backrest just below the scapula.</li>
+                  <li><b>Intact Trunk Control:</b> A lower backrest (e.g., lumbar support) allows freedom for propulsion.</li>
+                </ul>
+                <li><b>Too Tall:</b> Restricts shoulder movement, making propulsion less effective.</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold">Rear Wheel Size</span>
+              <ul className="list-disc ml-12 space-y-2 mt-2">
+                <li><b>Guideline:</b> Common adult wheel sizes are 24 or 26 inches. Paediatric sizes range from 18 to 22 inches.</li>
+                <li><b>Consideration:</b> A smaller wheel (e.g., 22-inch) can help a shorter individual achieve the optimal 120° elbow angle for efficient propulsion. Heavier wheels are more difficult to start moving from a stop.</li>
+              </ul>
+            </div>
+          </div>
+
+
+        </>
+      )
+    },
+    {
+      id: "10",
       label: "Fitting Checklist: The Chair",
       content: (
         <>
@@ -642,17 +874,66 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
       )
     },
     {
-      id: "10",
-      label: "References",
+      id: "11",
+      label: "Page References",
       content: (
         <>
-          <p className="text-gray-700 text-xl font-Pixelmono">
-            Additional studies and references can be found in medical journals and historical archives.
+          <h2 className="text-gray-700 text-3xl font-Cap mt-8">
+            References for: "The Wheelchair"
+          </h2>
+          <div className="text-sm font-YakuHanJP hidden">
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+           Bhatt, P., & Goe, A. (2017). Carbon Fibres: Production, Properties and Potential Use. <i>Material Science Research India, 14</i>(1), 52–57. https://doi.org/10.13005/msri/140109
           </p>
-          <div className="h-64 bg-gray-200 rounded"></div>
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Chan, F. H. N., Eshraghi, M., Alhazmi, M. A., & Sawatzky, B. J. (2017). The effect of caster types on global rolling resistance in manual wheelchairs on indoor and outdoor surfaces. <i>Assistive Technology, 30</i>(4), 176–182. https://doi.org/10.1080/10400435.2017.1307880
+          </p>
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Cooper, R. (1995). <i>Rehabilitation Engineering Applied to Mobility and Manipulation.</i> Taylor & Francis.
+          </p>
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Frost, S., Noon, J., Scheffler, E., & Stoeckle, R. J. (2013). <i>Wheelchair service training package: trainer’s manual intermediate level</i> (C. Khasnabis & K. Mines, Eds.). World Health Organization.
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Garcia-Mendez, Y., Pearlman, J. L., Boninger, M. L., & Cooper, R. A. (2013). Health risks of vibration exposure to wheelchair users in the community. <i>The Journal of Spinal Cord Medicine, 36</i>(4), 365–375. https://doi.org/10.1179/2045772313y.0000000124
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Lange, M. L., & Minkel, J. (2025). <i>Seating and wheeled mobility: A clinical resource guide</i> (2nd ed.). Routledge.
+          </p>
+          <p className="text-gray-700   leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+           Lin, J.-T., & Sprigle, S. (2019). The influence of operator and wheelchair factors on wheelchair propulsion effort. <i>Disability and Rehabilitation: Assistive Technology, 15</i>(3), 328–335. https://doi.org/10.1080/17483107.2019.1578425
+          </p>
+          <p className="text-gray-700   leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+           Medola, F. O., Silva, D. C., Fortulan, C. A., Carril Elui, V. M., & Paschoarelli, L. C. (2014). The influence of handrim design on the contact forces on hands’ surface: A preliminary study. <i>International Journal of Industrial Ergonomics, 44</i>(6), 851–856. https://doi.org/10.1016/j.ergon.2014.09.005
+          </p>
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+           Misch, J., & Sprigle, S. (2021). Effects of wheels and tires on high-strength lightweight wheelchair propulsion cost using a robotic wheelchair tester. <i>Disability and Rehabilitation: Assistive Technology</i>, 1–11. https://doi.org/10.1080/17483107.2021.2012274
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Ott, J., & Pearlman, J. (2021). Scoping review of the rolling resistance testing methods and factors that impact manual wheelchairs. <i>Journal of Rehabilitation and Assistive Technologies Engineering, 8</i>, 205566832098030. https://doi.org/10.1177/2055668320980300
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Permobil. (2024). Manual wheelchair guide: A comprehensive introduction to optimizing manual mobility for client function. In <i>https://hub.permobil.com/manual-wheelchair-guide-download</i>. Permobil.
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Requejo, P. S., Furumasu, J., & Mulroy, S. J. (2015). Evidence-Based Strategies for Preserving Mobility for Elderly and Aging Manual Wheelchair Users. <i>Topics in Geriatric Rehabilitation, 31</i>(1), 26–41. https://doi.org/10.1097/tgr.0000000000000042
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+           Requejo, P. S., & McNitt-Gray, J. L. (2016). <i>Wheeled Mobility Biomechanics</i>. Frontiers Media SA.
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Richter, W. M., Rodriguez, R., Woods, K. R., Karpinski, A. P., & Axelson, P. W. (2006). Reduced Finger and Wrist Flexor Activity During Propulsion With a New Flexible Handrim. <i>Archives of Physical Medicine and Rehabilitation, 87</i>(12), 1643–1647. https://doi.org/10.1016/j.apmr.2006.09.009
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+           Worobey, L. A., Bernstein, J., Ott, J., Berner, T., Black, J., Cabarle, M., Roesler, T., Scarborough, S., & Betz, K. (2023). RESNA position on the application of ultralight manual wheelchairs. Assistive Technology: <i>The Official Journal of RESNA</i>, 1–18. https://doi.org/10.1080/10400435.2023.2221148
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Zepeda, R., Chan, F., & Sawatzky, B. (2016). The effect of caster wheel diameter and mass distribution on drag forces in manual wheelchairs. <i>Journal of Rehabilitation Research and Development, 53</i>(6), 893–900. https://doi.org/10.1682/jrrd.2015.05.0074
+          </p>
+        </div>
         </>
       )
-    }
+    },
   ];
 
   const currentIndex = subtabs.findIndex(tab => tab.id === activeSubtab);

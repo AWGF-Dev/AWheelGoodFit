@@ -651,6 +651,55 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
           <PageFourChecklist />
         </>
       )
+    },
+        {
+      id: "8",
+      label: "Page References",
+      content: (
+        <>
+          <h2 className="text-gray-700 text-3xl font-Cap mt-8">
+            References for: "Seating and Positioning"
+        </h2>
+        <div className="text-sm font-YakuHanJP hidden">
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Agency for Clinical Innovation. (2017). <i>Gathering information for the client profile.</i> Aci.health.nsw.gov.au. https://aci.health.nsw.gov.au/networks/spinal-cord-injury/spinal-seating/module-2/gathering-information-for-the-client-profile
+          </p>
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Asheghan, M., Hollisaz, M. T., Taheri, T., Kazemi, H., & Aghda, A. K. (2016). The prevalence of carpal tunnel syndrome among long-term manual wheelchair users with spinal cord injury: A cross-sectional study. <i>The Journal of Spinal Cord Medicine, 39</i>(3), 265–271. https://doi.org/10.1179/2045772315y.0000000033
+          </p>
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Cherubini, M., & Melchiorri, G. (2012). Descriptive study about congruence in wheelchair prescription. <i>PubMed, 48</i>(2), 217–222
+          </p>
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Lange, M. L., & Minkel, J. (2025). <i>Seating and wheeled mobility: A clinical resource guide</i> (2nd ed.). Routledge
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Mashola, M. K., Korkie, E., & Mothabeng, D. J. (2021). Pain and its impact on functioning and disability in manual wheelchair users with spinal cord injury: a protocol for a mixed-methods study. <i>BMJ Open, 11</i>(1), e044152. https://doi.org/10.1136/bmjopen-2020-044152
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Ott, J., Henderson, T., Wilson-Jene, H., Koontz, A., & Pearlman, J. (2021). A high prevalence of manual wheelchair rear-wheel misalignment could be leading to increased risk of repetitive strain injuries. <i>Disability and Rehabilitation: Assistive Technology</i>, 1–9. https://doi.org/10.1080/17483107.2021.1890843
+          </p>
+          <p className="text-gray-700   leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Ott, J., & Pearlman, J. (2021). Scoping review of the rolling resistance testing methods and factors that impact manual wheelchairs. <i>Journal of Rehabilitation and Assistive Technologies Engineering, 8</i>, 205566832098030. https://doi.org/10.1177/2055668320980300
+          </p>
+          <p className="text-gray-700   leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Paralyzed Veterans of America. (2005). <i>Preservation of upper limb function following spinal cord injury: a clinical practice guideline for health-care professionals</i>. Consortium For Spinal Cord Medicine.
+          </p>
+          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Robertson, B., Lane, R., Lannin, N., Laver, K., & Barr, C. (2022). A Systematic Review of Outcomes Measured Following New Wheelchair and Seating-Prescription Interventions in Adults. Archives of Rehabilitation Research and Clinical Translation, 5(1), 100249. https://doi.org/10.1016/j.arrct.2022.100249
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Sprigle, S. (2023). Measure It: Proper Wheelchair Fit Is Key to Ensuring Function while Protecting Skin Integrity. Advances in Skin & Wound Care, 36(8), 404–413. https://doi.org/10.1097/asw.0000000000000001
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            World Health Organization. (2023). Wheelchair provision guidelines. World Health Organization.
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Worobey, L. A., Bernstein, J., Ott, J., Berner, T., Black, J., Cabarle, M., Roesler, T., Scarborough, S., & Betz, K. (2023). RESNA position on the application of ultralight manual wheelchairs. Assistive Technology: <i>The Official Journal of RESNA</i>, 1–18. https://doi.org/10.1080/10400435.2023.2221148
+          </p>
+        </div>
+        </>
+      )
     }
   ];
 

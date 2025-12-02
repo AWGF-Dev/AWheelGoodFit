@@ -185,9 +185,12 @@ const PageThree = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "fat",
-      label: "References",
+      label: "Page References",
       content: (
         <>
+        <h2 className="text-gray-700 text-3xl font-Cap mt-8">
+            References for: "The Person"
+        </h2>
         <div className="text-sm font-YakuHanJP">
           <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
             Agency for Clinical Innovation. (2017). <i>Gathering information for the client profile.</i> Aci.health.nsw.gov.au. https://aci.health.nsw.gov.au/networks/spinal-cord-injury/spinal-seating/module-2/gathering-information-for-the-client-profile

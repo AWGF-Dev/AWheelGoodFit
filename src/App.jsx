@@ -116,13 +116,13 @@ function App() {
     },
         {
       id: "h9",
-      label: "Wheel Lock",
+      label: "Wheel Locks",
       position: [-1.1, 1.5, 0.5],
       offset: [-1, -0.2, -0.3],
       distance: "7",
       overview: "Wheel locks are safety devices that prevent the wheelchair from rolling when stationary and help facilitate safe transfers. The type (e.g., standard scissor vs. easy-reach lever) and placement should ensure the user can engage and disengage them effectively without compromising their posture or safety.",
       links: [
-
+        { id: "7", page: "page5", label: "Go to 'Footrests' for More Info" },
       ]
     },
         {
@@ -166,7 +166,7 @@ function App() {
       distance: "7",
       overview: "Foot rests support the feet to maintain proper lower limb alignment, which is critical for posture, circulation, and comfort. Features such as flip-up or swing-away designs clear space anterior to the chair, facilitating safe and independent transfers. Heel loops, often made of nylon, help maintain foot positioning, especially for users with limited lower extremity control or sensation.",
       links: [
-        { id: "7", page: "page5", label: "Go to 'Legrests' for More Info" },
+        { id: "7", page: "page5", label: "Go to 'Footrests' for More Info" },
       ]
     },
         {

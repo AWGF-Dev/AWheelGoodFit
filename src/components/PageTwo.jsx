@@ -93,19 +93,19 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
       label: "Background",
       content: (
         <>
-          <h2 className="text-blue-500 text-4xl font-Cap">
+          <h2 className="text-gray-700 text-4xl font-Cap">
             Why the “fit” domain?
           </h2>
           <p className="text-gray-700 text-xl font-Rob mb-4">
             Inadequate manual wheelchair fitting is a high-stakes clinical competency gap within wheelchair provision, directly linked to adverse outcomes including pressure injuries, pain, and reduced functional independence (Sprigle, 2023). The associated economic burden is substantial, with pressure injuries alone costing the Australian healthcare system an estimated $9.11 billion annually (Nghiem et al., 2022). Conversely, a well-fitted wheelchair significantly enhances comfort, user participation, and quality of life (Gallagher et al., 2020). Despite its importance, the "fitting" domain is consistently identified as the weakest competency among emerging physiotherapists—attributable to a lack of standardised entry-level education in wheelchair knowledge and relevant fitting principles (Burrola-Mendez et al., 2022; Toro-Hernández et al., 2019; Goldberg et al., 2023). This highlights a critical disparity between foundational training and the competencies emphasised by international guidelines (WHO, 2023), necessitating supplemental, targeted educational interventions.
           </p>
-          <h2 className="text-orange-500 text-4xl font-Cap mt-8">
+          <h2 className="text-gray-700 text-4xl font-Cap mt-8">
             Our goal:
           </h2>
           <p className="text-gray-700 text-xl font-Rob mb-4">
             This project aimed to design and develop an engaging, evidence-based online resource to enhance knowledge of manual wheelchair components and fitting considerations for physiotherapy students and early-career clinicians.
           </p>
-          <h2 className="text-blue-500 text-4xl font-Cap mt-8">
+          <h2 className="text-gray-700 text-4xl font-Cap mt-8">
             Method:
           </h2>
           <p className="text-gray-700 text-xl font-Rob mb-4">
@@ -136,9 +136,12 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
     },
     {
       id: "4",
-      label: "References",
+      label: "Page References",
       content: (
         <>
+        <h2 className="text-gray-700 text-3xl font-Cap mt-8">
+            References for: "Overview"
+        </h2>
           <div className="text-sm font-YakuHanJP">
           <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
             Burrola-Mendez, Y., Kamalakannan, S., Rushton, P. W., Bouziane, Selsabil-A., Giesbrecht, E., Kirby, R. L., Gowran, R. J., Rusaw, D. F., Tasiemski, T., Goldberg, M., Tofani, M., Pedersen, J. P., & Pearlman, J. (2022). Wheelchair service provision education for healthcare professional students, healthcare personnel and educators across low- to high-resourced settings: a scoping review. <i>Disability and Rehabilitation: Assistive Technology</i>, 1–22. https://doi.org/10.1080/17483107.2022.2037757

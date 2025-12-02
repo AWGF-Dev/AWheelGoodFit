@@ -19,7 +19,7 @@ export default function PageFiveChecklist() {
       const checklistItemsFour = [
     "Spin freely",
     "Axle bolts are tight",
-    "Tyres inflated conectly (with thumb pressure, wheel can be depressed less than 5mm)",
+    "Tires inflated correctly (with thumb pressure, wheel can be depressed less than 5mm)",
     "Push rims are secure",
   ];
         const checklistItems5 = [
@@ -54,8 +54,7 @@ export default function PageFiveChecklist() {
 
   return (
     <>  
-            <div className="flex justify-left">
-            <div className="p-4 border-2 border-blue-500 w-200">
+
                 <span className="text-gray-700 text-xl font-Rob font-bold">
                 Whole wheelchair including PSDs
             </span>
@@ -121,8 +120,6 @@ export default function PageFiveChecklist() {
             </span>
             <div className="ml-6 my-4">
                 <Checklist id="11" items={checklistItems11} />
-            </div>
-            </div>
             </div>
         
     </>

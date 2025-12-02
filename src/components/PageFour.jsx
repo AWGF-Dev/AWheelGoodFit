@@ -660,42 +660,48 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
           <h2 className="text-gray-700 text-3xl font-Cap mt-8">
             References for: "Seating and Positioning"
         </h2>
-        <div className="text-sm font-YakuHanJP hidden">
+        <div className="text-sm font-YakuHanJP">
           <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Agency for Clinical Innovation. (2017). <i>Gathering information for the client profile.</i> Aci.health.nsw.gov.au. https://aci.health.nsw.gov.au/networks/spinal-cord-injury/spinal-seating/module-2/gathering-information-for-the-client-profile
+            Cooper, R. A. (1998). <i>Wheelchair selection and configuration</i>. Demos.
           </p>
           <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Asheghan, M., Hollisaz, M. T., Taheri, T., Kazemi, H., & Aghda, A. K. (2016). The prevalence of carpal tunnel syndrome among long-term manual wheelchair users with spinal cord injury: A cross-sectional study. <i>The Journal of Spinal Cord Medicine, 39</i>(3), 265–271. https://doi.org/10.1179/2045772315y.0000000033
+           Dillbeck Regier, A., Berryman, A., Hays, K., Smith, C., Staniszewski, K., & Gerber, D. (2014). Two approaches to manual wheelchair configuration and effects on function for individuals with acquired brain injury. <i>NeuroRehabilitation, 35</i>(3), 467–473. https://doi.org/10.3233/nre-141138
           </p>
           <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Cherubini, M., & Melchiorri, G. (2012). Descriptive study about congruence in wheelchair prescription. <i>PubMed, 48</i>(2), 217–222
+            Frost, S., Noon, J., Scheffler, E., & Stoeckle, R. J. (2013). <i>Wheelchair service training package: trainer’s manual intermediate level</i> (C. Khasnabis & K. Mines, Eds.). World Health Organization.
           </p>
           <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Lange, M. L., & Minkel, J. (2025). <i>Seating and wheeled mobility: A clinical resource guide</i> (2nd ed.). Routledge
+            International Organization for Standardization. (2018). <i>ISO 16840–2: Wheelchair seating — Part 2: Determination of physical and mechanical characteristics of devices intended to manage tissue integrity – Seat cushions.</i>
           </p>
           <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Mashola, M. K., Korkie, E., & Mothabeng, D. J. (2021). Pain and its impact on functioning and disability in manual wheelchair users with spinal cord injury: a protocol for a mixed-methods study. <i>BMJ Open, 11</i>(1), e044152. https://doi.org/10.1136/bmjopen-2020-044152
+            Nace, S., Tiernan, J., & Ní Annaidh, A. (2019). Manufacturing custom-contoured wheelchair seating: A state-of-the-art review. <i>Prosthetics and Orthotics International, 43</i>(4), 382–395. https://doi.org/10.1177/0309364619836028
           </p>
           <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Ott, J., Henderson, T., Wilson-Jene, H., Koontz, A., & Pearlman, J. (2021). A high prevalence of manual wheelchair rear-wheel misalignment could be leading to increased risk of repetitive strain injuries. <i>Disability and Rehabilitation: Assistive Technology</i>, 1–9. https://doi.org/10.1080/17483107.2021.1890843
+            Pedersen, J. P., Smith, C., Dahlin, M., Henry, M., Jones, J., McKenzie, K., Sevigny, M., & Yingling, L. (2020). Wheelchair backs that support the spinal curves: Assessing postural and functional changes. <i>The Journal of Spinal Cord Medicine, 45</i>(2), 194–203. https://doi.org/10.1080/10790268.2020.1760530
           </p>
           <p className="text-gray-700   leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Ott, J., & Pearlman, J. (2021). Scoping review of the rolling resistance testing methods and factors that impact manual wheelchairs. <i>Journal of Rehabilitation and Assistive Technologies Engineering, 8</i>, 205566832098030. https://doi.org/10.1177/2055668320980300
+           Sonenblum, S. E., Seol, D., Sprigle, S. H., & Cathcart, J. M. (2020). Seated buttocks anatomy and its impact on biomechanical risk. <i>Journal of Tissue Viability, 29</i>(2), 69–75. https://doi.org/10.1016/j.jtv.2020.01.004
           </p>
           <p className="text-gray-700   leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Paralyzed Veterans of America. (2005). <i>Preservation of upper limb function following spinal cord injury: a clinical practice guideline for health-care professionals</i>. Consortium For Spinal Cord Medicine.
-          </p>
-          <p className="text-gray-700 leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Robertson, B., Lane, R., Lannin, N., Laver, K., & Barr, C. (2022). A Systematic Review of Outcomes Measured Following New Wheelchair and Seating-Prescription Interventions in Adults. Archives of Rehabilitation Research and Clinical Translation, 5(1), 100249. https://doi.org/10.1016/j.arrct.2022.100249
+            Sprigle, S., Wootten, M., Sawacha, Z., & Theilman, G. (2003). Relationships Among Cushion Type, Backrest Height, Seated Posture, And Reach Of Wheelchair Users With Spinal Cord Injury. <i>The Journal of Spinal Cord Medicine, 26</i>(3), 236–243. https://doi.org/10.1080/10790268.2003.11753690
           </p>
           <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Sprigle, S. (2023). Measure It: Proper Wheelchair Fit Is Key to Ensuring Function while Protecting Skin Integrity. Advances in Skin & Wound Care, 36(8), 404–413. https://doi.org/10.1097/asw.0000000000000001
+            Walford, S. L., Requejo, P. S., Mulroy, S. J., & Neptune, R. R. (2019). Predictors of shoulder pain in manual wheelchair users. <i>Clinical Biomechanics, 65</i>, 1–12. https://doi.org/10.1016/j.clinbiomech.2019.03.003
           </p>
           <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            World Health Organization. (2023). Wheelchair provision guidelines. World Health Organization.
+            Ward, D. E. (1994). <i>Prescriptive seating for wheeled mobility</i>. Healthwealth International. Waugh, K., & Crane, B. (2013). A clinical application guide to standardized wheelchair seating measures of the body and seating support surfaces. In http://www.assistivetechnologypartners.
           </p>
           <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
-            Worobey, L. A., Bernstein, J., Ott, J., Berner, T., Black, J., Cabarle, M., Roesler, T., Scarborough, S., & Betz, K. (2023). RESNA position on the application of ultralight manual wheelchairs. Assistive Technology: <i>The Official Journal of RESNA</i>, 1–18. https://doi.org/10.1080/10400435.2023.2221148
+            Waugh, K., & Crane, B. (2013). A clinical application guide to standardized wheelchair seating measures of the body and seating support surfaces. In <i>http://www.assistivetechnologypartners</i>.
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+          Waugh, K., Crane, B., Taylor, S. J., Cwiertnia, S., Savage, S. S., Davis, K., Brown, L., & Christie, S. (2013). <i>Glossary of wheelchair terms and definitions</i>. University of Colorado Anschutz Medical Campus.
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            World Health Organization. (2023). <i>Wheelchair provision guidelines</i>. World Health Organization
+          </p>
+          <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
+            Ye, J., Jiang, Z., Chen, S., Cheng, R., Xu, L., & Tsai, T.-Y. (2023). Rehabilitation Practitioners’ Perceptions of Optimal Sitting and Standing Posture in Men with Normal Weight and Obesity. <i>Bioengineering, 10</i>(2), 210. https://doi.org/10.3390/bioengineering10020210
           </p>
         </div>
         </>

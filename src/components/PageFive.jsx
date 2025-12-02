@@ -881,7 +881,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
           <h2 className="text-gray-700 text-3xl font-Cap mt-8">
             References for: "The Wheelchair"
           </h2>
-          <div className="text-sm font-YakuHanJP hidden">
+          <div className="text-sm font-YakuHanJP">
           <p className="text-gray-700  leading-13" style={{ textIndent: '-3.5em', paddingLeft: '3.5em' }}>
            Bhatt, P., & Goe, A. (2017). Carbon Fibres: Production, Properties and Potential Use. <i>Material Science Research India, 14</i>(1), 52–57. https://doi.org/10.13005/msri/140109
           </p>
@@ -962,7 +962,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
   return (
     <div className="w-full h-full flex">
       {/* LEFT SIDEBAR */}
-      <div className="w-72 bg-gray-100 border-r border-gray-300 p-6 flex-shrink-0 h-screen flex flex-col transition-opacity duration-300">
+      <div className="w-72 bg-gray-100 overflow-y-auto border-r border-gray-300 p-6 flex-shrink-0 h-screen pb-30 flex flex-col transition-opacity duration-300">
         <p className="text-4xl font-mono font-bold mb-6 text-gray-800 tracking-tight">{title}</p>
         <div className="flex flex-col gap-3">
           {subtabs.map(tab => (

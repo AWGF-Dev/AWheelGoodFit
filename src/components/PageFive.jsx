@@ -7,7 +7,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
   const subtabs = [
     {
       id: "intro",
-      label: "Common Types of Wheelchairs",
+      label: "Common Wheelchairs",
       content: (
         <>
           <h2 className="text-gray-700 text-3xl font-Cap">
@@ -969,7 +969,7 @@ const PageFive = ({ title, activeSubtab, onSubtabClick }) => {
             <div
               key={tab.id}
               onClick={() => onSubtabClick(tab.id, "page5")}
-              className={`cursor-pointer px-3 py-2 rounded font-Pixelmono text-xl
+              className={`cursor-pointer px-3 py-2 rounded font-Pixelmono text-[17px]
                 ${activeSubtab === tab.id ? "bg-black text-white" : "hover:bg-gray-300 text-black"}`}
             >
               {tab.label}

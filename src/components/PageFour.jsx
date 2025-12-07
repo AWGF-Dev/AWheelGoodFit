@@ -264,7 +264,7 @@ const PageFour = ({ title, activeSubtab, onSubtabClick }) => {
             </li>
           </ul>
           <span className="text-gray-700 text-xl font-Rob">
-            THere are some examples of relative body segment angles:
+            There are some examples of relative body segment angles:
           </span>
           <div className="ml-12 space-y-2 text-gray-700 text-xl font-Rob mt-5">
             <div><b>Thigh to trunk angle:</b> Informs seat to back support angle</div>

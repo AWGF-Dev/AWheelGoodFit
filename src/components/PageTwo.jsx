@@ -79,7 +79,7 @@ const PageTwo = ({ title, activeSubtab, onSubtabClick }) => {
           </p>
 
           <p className="text-gray-700 text-xl font-Rob mb-4">
-            Your journey to a <span className="pixel-italic">wheel good</span> fit starts here. We hope this helps you roll out a higher standard of patient-centred care. 
+            Your journey to a <p className="pixel-italic">wheel good</p>  fit starts here. We hope this helps you roll out a higher standard of patient-centred care. 
           </p>
 
           <p className="text-gray-700 text-xl font-Rob">

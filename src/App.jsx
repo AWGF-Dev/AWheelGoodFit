@@ -122,7 +122,7 @@ function App() {
       distance: "7",
       overview: "Wheel locks are safety devices that prevent the wheelchair from rolling when stationary and help facilitate safe transfers. The type (e.g., standard scissor vs. easy-reach lever) and placement should ensure the user can engage and disengage them effectively without compromising their posture or safety.",
       links: [
-        { id: "7", page: "page5", label: "Go to 'Footrests' for More Info" },
+        { id: "8", page: "page5", label: "More Info on Wheel Locks" },
       ]
     },
         {
